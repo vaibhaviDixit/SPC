@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+
+    
+    
+     .res_table .title{
+      background-color:orange;
+      width: 90vw;
+      height: 3vw;
+      padding: 6px;
+      margin:auto;
+      color: white;
+      font-size:3vw;
+      font-family: verdana;
+      
+    }
+   .res_table li{
+      padding:5px;
+    }
+   .res_table p{
+      text-align: justify-all;
+       font-size:.8em;margin: auto;
+      text-align: justify;
+      width: 800px;
+      max-width: 100%;
+    }
+
+      .res_table .customers {
+        /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+        font-family: sans-serif;
+        border-collapse: collapse;margin: auto;margin-top: 30px;
+        max-width: 100%;width: 800px;
+      }
+
+      .res_table .customers tr:nth-child(even){background-color: #f2f2f2;}
+
+      .res_table .customers tr:hover {background-color: #ddd;}
+      .res_table .customers  td{
+        font-size:.6em;padding: 8px;
+      }
+
+      .res_table .customers th {
+        background-color: #f08080;
+        color: white;font-size: .7em;padding: 8px;
+      }
+      .res_table h2{margin:20px; margin-left: 50px;}
+
+
+      .res_table{
+        overflow-x: auto;
+      }
+
+
+  .main .title{
+      color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+    }
+
+      #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    max-width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 19px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f08080;
+  color: white;
+  font-size: 19px;
+}
+b{
+  margin: 1rem 0;
+}
+.main p{
+
+  text-align: justify-all;
+   font-size:16px;
+  text-align: justify;
+  max-width: 100%;
+}
+img{max-width: 100%;}
+  
+
+.main main{
+          margin-left: 50px;
+           width: 100%;
+           margin-top: 40px;
+    }
+    .main main .box{
+     width:250px;
+     height:150px;
+     float: left;
+     padding: 7px;
+     padding-left: 20px;  
+      overflow: hidden;
+          display: inline-block;
+
+
+    }
+
+    .main main img{
+     width: 250px;
+     height: 150px;
+      border-radius: 4px;
+
+    }
+
+    .main main img:hover{
+      transform: scale(2,2);
+      transition: .3s transform;
+
+    }
+        @media screen and (max-width:800px){
+
+
+        .main main .box{
+           width:150px;
+           height:100px;
+           float: left;
+           padding: 7px;
+           padding-left: 10px;  
+            overflow: hidden;
+                display: inline-block;
+
+
+              }
+
+        .main main img{
+         width: 150px;
+         height: 100px;
+          border-radius: 4px;
+
+        }
+        }
+.card{
+
+    display: inline-block;
+    padding: 0px;
+    margin: 15px;
+    border: none;
+
+  }
+  .card img{
+    height: 9em;
+    width: 9em;
+
+    /*height: 190px;
+    width: 200px;*/
+    border-radius: 10%;
+    padding: 3px;
+  }
+  .card p{
+    font-size: 17px;
+    padding: 0px 10px;
+  }
+
+  .uppertitle{
+          color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+          text-align: center;
+    }
+
+      </style>
+
+</head>
+<body link="white" vlink="white">
+
+   <div class="header" >
+           
+             <div id="logo"><img src="logo.png" width="150px" height="150px;"></div>
+
+             <span onclick="func()" id="togicon">&#9776;</span>
+
+
+           <div id="text">
+             
+              <h3 >Ramkrishna Technical Education Society's , </h3>
+              <h2 > SHIVAJI  POLYTECHNIC COLLEGE, SANGOLA</h2>
+              <h4 >Approved by AICTE, New Delhi, Recognized by DTE, Mumbai (Govt. of Maharashtra) Affiliated to MSBTE Mumbai.</h4>
+            <p>An ISO 9001:2015 Certified Institute<br>
+            MSBTE Code : 1208 | DTE Code : D-6471</p>
+
+             </div>
+            
+           </div>
+           
+
+<!--navbar-->
+       
+       <div class="nav" id="navigation">
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="ainstitute.html">About Institute</a>
+                <a href="atrust.html">About Trust</a>
+                <a href="vision.html">Vision & Mission</a>
+               
+               
+
+
+              </div>
+            </li>
+
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Departments</a>
+    <div class="dropdown-content">
+      <a href="gsd.html">General Science Department</a>
+      <a href="cd.html">Computer Department</a>
+      <a href="ced.html">Civil Department</a>
+      <a href="me.html">Mechanical Department</a>
+      <a href="ej.html"> Electronics Department</a>
+     
+
+
+    </div>
+  </li>
+
+
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="course.html">Course Offered</a>
+      <a href="process.html">Admission Process</a>
+      <a href="admicell.html">Admission Cell </a>
+      <a href="fee.html">Fee Structure </a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Academic</a>
+    <div class="dropdown-content">
+      <a href="academic.html">Academic Calendar</a>
+      <a href="acarules.html">Academic Rules</a>
+      <a href="acasyllabus.html">Academic Syllabus </a>
+      
+    </div>
+  </li>
+
+
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Placements</a>
+    <div class="dropdown-content">
+      <a href="train.html">About Training And Placement</a>
+      <a href="recruiters.html">Our Recruiters</a>
+      <a href="placecell.html">Contact Placement Cell </a>
+      
+    </div>
+  </li>
+
+  
+  
+  <li><a href="lib.html">Library</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Alumni</a>
+    <div class="dropdown-content">
+      <a href="am.html">Alumni Meet</a>
+      <a href="ac.html">Alumni Cell</a>
+      <a href="ar.html">Alumni Regssistration </a>
+      
+      
+    </div>
+  </li>
+  
+  <li><a href="faci.html">Facilities</a></li>
+  <li><a href="edp.html">EDP Cell</a></li>
+
+
+     <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href="cont.html">Contact Form</a>
+      <a href="cont2.html">Principal</a>
+      <a href="cont3.html">Admistrative Department </a>
+      <a href="cont4.html">Head Of Department</a>
+      <a href="cont5.html">Admission Cell </a>
+      <a href="cont6.html">Transport Of Department</a>
+      
+      
+    </div>
+  </li>
+  
+
+
+
+</ul></div>
+
+
+
+
+
+<div class="outer">
+
+<div class="tab">
+<h4 style="    padding: 1rem; text-align: center; color: maroon;">Mechanical Engineering</h4>
+  <button class="tablinks" onclick="openCity(event, 'About-Trust')" id="defaultOpen">Department Structure</button>
+  <button class="tablinks" onclick="openCity(event, 'About-Institute')" >Advisory Board </button>
+  <button class="tablinks" onclick="openCity(event, 'President-Message')"> Laboratories</button>
+  <button class="tablinks" onclick="openCity(event, 'Secretary-Message')">M.O.U</button>
+  <button class="tablinks" onclick="openCity(event, 'Manager-Message')">Industrial Visit</button>
+  <button class="tablinks" onclick="openCity(event, 'Principal-Message')">Workshop And Guest Lectures </button>
+  <button class="tablinks" onclick="openCity(event, 'VisionMission')">Achievements </button>
+  <button class="tablinks" onclick="openCity(event, 'Association')">Students Association </button>
+  <button class="tablinks" onclick="openCity(event, 'Gallery')">Department Gallery </button>
+  <button class="tablinks" onclick="openCity(event, 'Faculties')"> Faculties </button>
+</div>
+
+<div id="About-Trust" class="tabcontent">
+<div class="main">
+
+ <div class="title">Department Of Mechanical Engineering – [Department Structure]</div>
+  <br><br>
+  <span><b>Departmental Structure</b></span>
+  <p>To work effectively departmental work is divided in faculties. Each faculty is enrolled in various activities in department and institute. HOD is the key person to manage those activities through the faculty and support them to enhance their performance.</p>
+
+
+  <span><b>Mentoring System</b></span><br>
+  <span><b>Objective:</b></span><br>  
+
+  <p>Within 2-3 years of diploma, Mechanical Engineering diploma program will demonstrate, or be prepared to achieve:
+Successful careers, as reflected by advancement to positions that include greater responsibility and intellectual challenge
+Successful performance in professional diploma program</p>
+
+<span><b>Guardian Faculty System</b></span><br>
+<span><b> Number of Guardian Faculty:</b>3-4 per class</span><br>
+<span><b>  Number of Students Guardian Faculty: </b>10-20</span><br>
+
+<p>Students are assigned to Guardian Faculty by Principal, GFM CO-ordinator, HOD and class teacher. The student record is maintained with details such as address, mobile numbers of parents and students, previous record, academic performance. Guardian Faculty help students by monitoring their performance, behavior and assist them in lagging areas. Counseling of students is done at personal level, if needed. Parents‟ meet is held once in a semester and student attendance and Unit Test marks are presented in the meeting. The bright students are felicitated in parents meet. For improving the student performance, remedial classes or tests/assignments/ paper solving sessions are arranged when needed.</p>
+<br>
+
+<span><b> Mentors list:</b></span>
+<br><br>
+<table id="customers">
+  <tr>
+    <th>Class</th>
+    <th>Name of Mentor</th>
+    <th>Batch</th>
+  </tr>
+
+  <tr>
+    <td>TY Mech </td>
+    <td>Mr.Bhosale A.B.</td>
+    <td>A1 (Roll No. 1-10, 28)</td>
+  </tr>
+
+  <tr>
+    <td>TY Mech</td>
+    <td> Mr.Bhosale G.S </td>
+    <td>A2 (Roll No. 11-14, 20-26)</td>
+  </tr>
+  <tr>
+    <td>TY Mech</td>
+    <td>Mr.Deshmukh R.A.</td>
+    <td>A2 (Roll No. 15-19, 27)</td>
+  </tr>
+  <tr>
+    <td>SY Mech</td>
+    <td>Mr. Bavache S.D.</td>
+    <td>A1 (Roll No. 1-15)</td>
+  </tr>
+  <tr>
+    <td>SY Mech</td>
+    <td>Mr.Khandare D.S.</td>
+    <td>A1-A2 (Roll No. 16-30)</td>
+  </tr>
+  
+    <tr>
+    <td>SY Mech</td>
+    <td>Mr.Salunkhe S.S.</td>
+    <td>A2 (Roll No. 31-45)</td>
+  </tr>
+</table>
+<br>
+<img src="ds_co.jpg" >
+
+
+
+</div>
+</div>
+
+<div id="About-Institute" class="tabcontent">
+ <div class="main">
+   <br>
+<div class="title">Department of Mechanical Engineering -[Advisory Board]</div>
+  <h2 style="text-align: justify-all;">DAAB Committee Member</h2>
+  <p style="text-align: justify-all;">The Departmental Academic Advisory Board (DAAB) has been formed with the objective of remaining up to date with the latest requirements of the industry and incorporating necessary components in the curriculum as much as possible.</p>
+  <p >The DAAB is enriched with members from the department as well as industry persons who periodically guide the departmental activities and suggest improvements of the program. The members of Departmental Advisory Board (DAAB) are:</p>
+    <br>
+  <table border="1px" id="customers" 
+cellspacing="3px" cellpadding="5px" >
+    
+    <tr > 
+        <th>Sr.NO</th>
+        <th>Name of Member</th>
+        <th> Designation</th>
+        <th>Email Id</th>
+        <th>Contact</th>
+
+
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mr.R.A.Deshmukh</td>
+      <td>Chairman</td>
+      <td>ranjitsinhdeshmukh222@gmail.com</td>
+      <td>9763328461</td>
+
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>Mr.Bhosale G.S</td>
+      <td>I/C HOD</td>
+      <td>
+        gsbhosale1208@gmail.com</td>
+      <td>9881742478</td>
+
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Dr. Vyavahare Ravindra Tatyasaheb</td>  
+      <td>Academic Expert </td>
+      <td>ravindra.vyavahare@sknscoe.ac.in</td>
+      <td> 8237379488</td>
+
+    </tr>
+  <tr>
+      <td>4</td>
+      <td>Prof. S.S. Wangikar</td>  
+      <td>Academic Expert </td>
+      <td>sandip.wangikar@gmail.com</td>
+      <td>9823785590</td>
+
+    </tr>
+       <tr>
+      <td>5</td>
+      <td>Mr.Chetan Ghutukde</td> 
+      <td>Industry Exper  </td>
+      <td>chetangutukade@gmail.com</td>
+      <td>8888156445</td>
+
+    </tr>
+
+     <tr>
+      <td>6</td>
+      <td>Mr. Bhosale A.B.</td> 
+      <td>Academic Expert </td>
+      <td>ajaybhosale1988@gmail.com</td>
+      <td>8237114132</td>
+
+    </tr>
+     <tr>
+      <td>7</td>
+      <td>Mr.Khandare D.S.</td> 
+      <td>Academic Expert </td>
+      <td>dhanrajkhandare@gmail.com </td>
+      <td>9860915071</td>
+
+    </tr>
+     <tr>
+      <td>8</td>
+      <td>Mr.Bavache S.D</td> 
+      <td>Internal Faculty</td>
+      <td>bavachesandip22@gmail.com</td>
+      <td>9960553434</td>
+
+    </tr>
+     
+        <tr>
+      <td>9</td>
+      <td>Mr.Salunkhe S.S</td>  
+      <td>Internal Faculty</td>
+      <td> salunkhesagar9999@gmail.com  </td>
+      <td>6209100100</td>
+
+    </tr>
+  
+    <tr>
+      <td>10</td>
+      <td>
+    Mr. Dudhane Onkar Pravin  </td> 
+      <td>Internal Faculty</td>
+      <td>omdudhane10@gmail.com </td>
+      <td>7709955925</td>
+
+    </tr>
+      
+             
+
+  </table>
+
+</div>
+</div>
+
+<div id="President-Message" class="tabcontent">
+ <div class="main">
+
+<div class="title">Lab Details</div>
+<h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: FLUID MECHANICS LAB</h2>
+  <p>This lab is run in conjunction with the theory course ME (Fluid Mechanics). This lab shows flow behavior, fluid forces and analysis tools are introduced. The goals of the experiments include determination of forces generated when fluid flow takes place over a solid object, applications of the control volume approach, demonstration of the momentum and energy equations, viscosity measurement and engineering correlations. Intricate flow phenomena such as separations and transition to turbulence are demonstrated. Experimental setups such as flow through a tube, flow over a flat plate are made available to the students. The lab experiments utilize U-tube manometer. The lab runs closely with the lectures in such a way that experiments support the text covered in the class room.</p>
+
+  <div class="res_table">
+
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>1</td>   
+        <td><ul>
+          <li>Verification of Bernoullies Theorem</li>
+          <li>Flow over Notches Apparatus</li>
+          <li>Flow through orifice and mouth piece apllication</li>
+          <li>Losses in pipe fittings Apparatus</li>
+          <li>Losses in pipe friction Apparatus and flow through orifice</li>
+          <li>Francis Turbine</li>
+          <li>Pelton Wheel Turbine,Centrifugal Pump,Reynolds Apparatus</li>
+        
+        </ul> </td>
+        <td>Pelton Wheel Turbine,Centrifugal Pump,Reynolds Apparatus</td>       
+        <td>Lecturer</td>
+        <td>M.E (Thermal Engineering)</td>
+        <td>66 Sqr.Mtr.</td>
+        <td>7,69,837 /-</td>
+      </tr>
+
+
+  </table>
+</div>
+  <!--2nd table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory: THEORY OF MACHINE LAB</h2>
+  <p style=" text-align: justify-all;">Mechanisms form the basis of any machine and it is an assemblage of rigid bodies so that they move upon each other with definite relative motion. Objectives of this Theory of Machines lab Manual is to impart practical knowledge on design and analysis of mechanisms for the specified type of motion in a machine. With the study of rigid bodies motions and forces for the transmission systems, machine kinematics and dynamics can be well understood</p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><ul>
+          <li>Balancing of Rotary Masses </li>
+          <li>Universal Governor</li>
+          <li>Multiplate Clutch</li>
+          <li>Disk Brake</li>
+          <li>Band and Block Brake</li>
+          <li>Cam and Follower</li>
+          <li>Belt drive model</li>
+          <li>Multiplate Clutch</li>
+        
+        </ul> </td>
+        <td>Mr.Bhosale G.S</td>               
+        <td>Lecturer</td>
+        <td>M.E*(Mechanical Engineering)</td>
+        <td>90.75 Sq.m</td>
+        <td>1,12,668/-</td>
+      </tr>
+
+
+  </table></div>
+       
+       <!--3rd table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory: MEASUREMENT AND CONTROL LAB</h2>
+  <p style=" text-align: justify-all;">Measurement and control is a measure of precision, or how well the measurement system reproduces the same result over time and under varying operating conditions. Laboratory quality control material is usually run at the beginning of each shift, after an instrument is serviced, when reagent lots are changed, after calibration, and whenever patient results seem inappropriate. Quality control material should approximate the same matrix as patient specimens, taking into account properties such as viscosity, turbidity, composition, and color.</p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><ul>
+          <li> Digital Vernier </li>
+          <li>Displacement Measurement using Inductive Transducer ( LVDT) </li>
+          <li>Stroboscope for Speed Measurement </li>
+          <li>Thermocouple Callibration test rig </li>
+          <li>Rotameter for flow measurement </li>
+          <li>Load Cell to measure force </li>
+          <li>Strain Gauge </li>
+          <li>Pressure Measurent Using Bourdon Pressure Gauge </li>
+        
+        </ul> </td>
+        <td>Mr.Bavache S.D.</td>                
+        <td>Lecturer</td>
+        <td>B.E. Mechanical Engineering, M.E. Design Engineering</td>
+        <td>76.31 Sq.m</td>
+        <td>1,39,696 /-</td>
+      </tr>
+
+
+  </table></div>
+
+   <!--4th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:THERMAL ENGINEERING LAB</h2>
+  <p style=" text-align: justify-all;">Thermal Engineering is a specialized sub-discipline of mechanical engineering that deals with the movement of heat energy and transfer. The energy can be transformed between two mediums or transferred into other forms of energy. A thermal engineer will have knowledge of thermodynamics and the process to convert generated energy from thermal sources into chemical, mechanical, or electrical energy. Many process plants use a wide variety of machines that utilize components that use heat transfer in some way. Many plants use heat exchangers in their operations. A thermal engineer must allow the proper amount of energy to be transferred for correct use. To much and the components could fail, too little and the system will not function at all. Thermal engineers must have an understanding of economics and the components that they will be servicing or interacting with. Some components that a thermal engineer could work with include heat exchangers, heat sinks, bi-metals strips, radiators and many more. Some systems that require a thermal engineer include; Boilers, heat pumps, water pumps, engines, and more.</p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><ul>
+          <li>Carbon Boiler</li>
+          <li>Babcock & Wilcocks Boiler</li>
+          <li>Stiffen Boltsman Law</li>
+          <li>Thermal Conductivity of metal Rod</li>
+          <li>Plate Heat Exchanger</li>
+          <li>Condencer</li>
+          <li>Evaporator</li>
+          <li>Solar Water Heater,Photovoltaic Cell ,Lamount</li>
+          
+        
+        </ul> </td>
+        <td>Mr.Khandare D.S</td>                
+        <td>Lecturer</td>
+        <td>B.E (Mechanical Engineering)</td>
+        <td>76.31 Sq.m</td>
+        <td>1,78,042 /-</td>
+      </tr>
+
+
+  </table></div>
+       
+
+        <!--5th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:AUTOMOBILE ENGINEERING LAB</h2>
+  <p style="text-align: justify-all;">Automobile engineering, along with aerospace engineering and naval architecture, is a branch of vehicle engineering, incorporating elements of mechanical, electrical, electronic, software, and safety engineering as applied to the design, manufacture and operation of motorcycles, automobiles, and trucks and their respective engineering subsystems. It also includes modification of vehicles. Manufacturing domain deals with the creation and assembling the whole parts of automobiles is also included in it. The automotive engineering field is research -intensive and involves direct application of mathematical models and formulas. The study of automotive engineering is to design, develop, fabricate, and test vehicles or vehicle components from the concept stage to production stage. Production, development, and manufacturing are the three major functions in this field. </p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><ul>
+          <li>Differential Gear Box </li>
+          <li>Rack and Pinion Steering Gear Box </li>
+          <li>Hydraulic Brake System </li>
+          <li>Battery Ignition System </li>
+          <li>Synchromesh Gear Box </li>
+          <li>Constant Mesh Gear Box </li> 
+          <li>Alternater Model </li>
+          <li>Propeller Shaft </li>
+    
+        
+        </ul> </td>
+        <td>Mr.Dudhane O. P.</td>               
+        <td>Lecturer</td>
+        <td>B.E.(Mechanical Engineering)</td>
+        <td>76.31 Sq.m</td>
+        <td>1,74,431 /-</td>
+      </tr>
+
+
+  </table></div>
+
+   <!--6th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:  METROLOGY AND QUALITY CONTROL LAB</h2>
+  <p style=" text-align: justify-all;">The simplest form of quality control was a sketch of the desired item. If the sketch did not match the item, it was rejected, in a simple Go/no go procedure. However, manufacturers soon found it was difficult and costly to make parts be exactly like their depiction; hence around 1840 tolerance limits were introduced, wherein a design would function if its parts were measured to be within the limits. Quality was thus precisely defined using devices such as plug gauges and ring gauges. However, this did not address the problem of defective items; recycling or disposing of the waste adds to the cost of production, as does trying to reduce the defect rate.</p> 
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><ul>
+          <li>Digital Vernier Calliper </li>
+          <li>Outside Micrometer (0-25 mm) </li>
+          <li>Slip Guages </li>
+          <li> Angle Gauge </li>
+          <li>Dial Indicator with comparator (0-10 mm) </li>
+          <li>Profile Projector </li>
+          <li>Vernier bevel protector (Lc = 5 sec) </li>
+          <li> Screw thread gauge,Ring gauge (5-25 mm) Surface Measuring Instrument Gear Tooth Vernier Calliper Vernier Depth Gauge Dial Type Vernier Calliper Inside Micrometer Adjustable Snap Gauge </li>
+          
+        
+        </ul> </td>
+        <td>Mr.Bavache S.D.</td>                      
+        <td>Lecturer</td>
+        <td>B.E. Mechanical Engineering, M.E. Design Engineering</td>
+        <td>45 Sq.m</td>
+        <td>5,19,314 /-</td>
+      </tr>
+  </table></div>
+  
+   
+   <!--7th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory: POWER ENGINEERING LAB</h2>
+  <p style=" text-align: justify-all;">An engine or motor is a machine designed to convert one form of energy into mechanical energy. Heat engines burn a fuel to create heat which is then used to do work. Internal combustion engines are heat engines that burn fuel in a combustion chamber to extract work from the pressure of expanding gases. Electric motors convert electrical energy into mechanical motion; pneumatic motors use compressed air; and clockwork motors in wind-up toys use elastic energy. A refrigerator (colloquially fridge) is a popular household appliance that consists of a thermally insulated compartment and a heat pump (mechanical, electronic or chemical) that transfers heat from the inside of the fridge to its external environment so that the inside of the fridge is cooled to a temperature below the ambient temperature of the room. </p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><ul>
+          <li>Single Cylinder Diesel test rig with rope brake dynamometer for heat balance sheet </li>
+          <li>Four stroke three cylinder petrol engine test rig with hydraulic dynamometer (Morse test) </li>
+          <li>Exhaust gas analyser</li>
+          <li>Two stage air compressor test rig</li>
+          <li>Vapour copression refrigeration test rig</li>
+          <li>Four stroke three cylinder petrol engine for dismentling </li>
+          <li>Solex Carburator</li>
+          <li>Four Barrel Bosch Diesel Fuel Pump With Fuel Injector Actual Original Cut Section Model</li>
+        
+          </ul> </td>
+        <td>Mr.Bhosale A.B.</td>                      
+        <td>Lecturer</td>
+        <td>M.E. (Thermal Engineering )</td>
+        <td>90.75 Sq.m</td>
+        <td>9,94,350 /-</td>
+      </tr>
+
+
+  </table>
+  </div>
+  <!--8th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:INDUSTRIAL FLUID POWER LAB</h2>
+  <p style=" text-align: justify-all;">Fluid power is the use of fluids under pressure to generate, control, and transmit power. Fluid power is subdivided into hydraulics using a liquid such as mineral oil or water, and pneumatics using a gas such as air or other gases. Compressed-air and water-pressure systems were once used to transmit power from a central source to industrial users over extended geographic areas; fluid power systems today are usually within a single building or mobile machine. Fluid power systems perform work by a pressurized fluid bearing directly on a piston in a cylinder or in a fluid motor. A fluid cylinder produces a force resulting in linear motion, whereas a fluid motor produces torque resulting in rotary motion. Within a fluid power system, cylinders and motors (also called actuators) do the desired work. Control components such as valves regulate the system. Pneumatics are less expensive to build and operate. Air is used as the compressed medium, so there is no requirement to drain or recover fluid. Hydraulic systems use larger working pressures, and require larger parts than pneumatics.</p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><ul>
+          <li>Pneumatic circuit trainer set up</li>
+          <li>Pneumatic circuit trainer set up</li>
+          
+          
+        
+          </ul> </td>
+        <td>Mr.Deshmukh R.A.</td>                     
+        <td>Principal</td>
+        <td>B.E. ( Mech ) M. E. (structure. Engg.), PhD * (Mechanical Engineering)</td>
+        <td>66 Sq.m   </td>
+        <td>2,37,967 /-</td>
+      </tr>
+
+
+  </table></div>
+
+  <!--9th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:METALLURAGY LAB</h2>
+  <p style=" text-align: justify-all;">Metallurgy is a domain of materials science and engineering that studies the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their mixtures, which are called alloys. A special type of alloy was invented, when scientists from the industrialized alloys of metals that can withstand the largest temperatures and pressures for use in industrial and technological applications such as state of the art race cars, spacecraft, submarines, nuclear reactors, jet airplanes, nuclear weapons. </p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><ul>
+          <li>Metallurgical microscope </li>
+          <li>Polishing Machine </li>
+          <li>Muffle furnace </li>
+          
+          
+        
+          </ul> </td>
+        <td>Mr.Salunkhe S.S.</td>                     
+        <td>Lecturer</td>
+        <td>B.E. (Mechanical Engineering)</td>
+        <td>76.31 Sq.m</td>
+        <td>52675 /-</td>
+      </tr>
+
+
+  </table>
+</div>
+  <!--10th table-->
+  <h2 style="text-align: justify-all;">Name of the laboratory:Power Plant Engineering</h2>
+  <p style="text-align: justify-all;">Power Plant Engineering basically focuses on power generation principles for real world applications. More specifically this course is focused on application of energy principles and power generation cycles. The main purpose of implementing this course in curriculum is to learn about how the power is generated in a power plant and its applications</p>
+
+  <div class="res_table">
+    <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><ul>
+          <li>Steam power plant-Working model</li>
+          <li>Thermal power plant-Non Working model</li>
+          <li>2 Stroke petrol engine sectional working model</li>
+          <li>4 Stroke petrol engine sectional working model</li>
+          <li>2 Stroke diesel engine sectional working model</li>
+          <li>4 Stroke diesel engine sectional working model</li>
+          <li>Gas turbine or Turbojet Engine Model</li>
+          
+          
+        
+          </ul> </td>
+        <td>Mr.Deshmukh R.A.</td>                     
+        <td>Principal</td>
+        <td>B.E. ( Mech ) M. E. (structure. Engg.), PhD * (Mechanical Engineering)</td>
+        <td>90.75 Sq.m</td>
+        <td>52887.60/-</td>
+      </tr>
+
+
+  </table>
+</div>
+       
+
+       
+
+
+  </div>
+</div>
+
+
+
+<div id="Secretary-Message" class="tabcontent">
+  <div class="main">
+
+    
+  <div class="title">Department Of Mechanical Engineering – [M.O.U.]</div>
+  <br><br>
+  <span><b>Departmental MOUs</b></span>
+  <p>Department has MoU with eminent computer industries which helped department to complete its objective with massive success.</p>
+  <span><b>Objective:</b></span>
+  <p>To increase the interaction with the growing computer industry to develop competent and professional computer engineers to give best results while working in their respective field of work.</p>
+  <br><br>
+
+  <table id="customers">
+    
+    <tr>
+      <th>SR. NO.     </th>
+      <th>COMPANY</th>
+      <th>YEAR</th>
+      <th>DATE</th>
+      <th>MOU PEROID</th>
+    </tr>
+
+    <tr>
+    <td>1</td>
+    <td>Sangola Shetkari Sahakari Sutgirani Ltd., Sangola.</td>
+    <td>2016-17</td>
+    <td>2016-07-09 </td>
+    <td>Five Years</td>
+    </tr>
+
+        <tr>
+    <td>2</td>
+    <td>Shivsai Corogated Box Producers, M.I.D.C. Sangola.</td>
+    <td>2016-17</td>
+    <td>2017-02-03 </td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>3</td>
+    <td>Microchem Coir Industries, Sangola.</td>
+    <td>2016-17</td>
+    <td>2017-04-08 </td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>4</td>
+    <td>OCL Bulk Coders & Fabricators, M.I.D.C., Sangola.</td>
+    <td>2017-18</td>
+    <td>2017-09-16</td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>5</td>
+    <td>Mechsams Engineering Pvt. Ltd., Pune.</td>
+    <td>2017-18</td>
+    <td>2018-03-24 </td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>6</td>
+    <td>Sitaram Maharaj Sakhar Karkhana ( Khardi ) Ltd., Pandharpur.</td>
+    <td>2016-17</td>
+    <td>2016-02-20</td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>7</td>
+    <td>Shivprasad Industry Pvt. Ltd. Kolhapur.</td>
+    <td>2017-18</td>
+    <td>2017-02-03 </td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>8</td>
+    <td>Autade Spinners Pvt. Ltd. Mangalwedha </td>
+    <td>2018-19</td>
+    <td>2018-12-04 </td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>9</td>
+    <td>Omkar Engineering Works Satara</td>
+    <td>2019-20</td>
+    <td>2019-09-25</td>
+    <td>Five Years</td>
+    </tr>
+
+    <tr>
+    <td>10</td>
+    <td>OM SAI Tools and Forging PVT. ltd. Satara</td>
+    <td>2019-20</td>
+    <td>2019-09-25 </td>
+    <td>Five Years</td>
+    </tr>
+  </table>
+
+    </div>
+</div>
+
+
+<div id="Manager-Message" class="tabcontent">
+<div class="main">
+    
+        <div class="title">Department Of Mechanical Engineering – [Industrial Visit]</div>
+  <h3>INDUSTRIAL VISITS</h3>
+  <p>Industrial visit has its own importance in a career of a student who is pursuing a professional degree. It is considered as a part of college curriculum and objectives of industrial visit is to provide students an insight regarding internal working of companies. We know, theoretical knowledge is not enough for making a good professional career. With an aim to go beyond academics, industrial visit provides student a practical perspective on the world of work.</p><p>
+
+Learning from textbooks, lectures and other study material does not suffice for holistic learning. Practical, hands-on learning is essential for better understanding of work processes and computer engineering functions.Industrial visits give greater clarity about important engineering concepts, as students practically experience how these concepts are put into action.</p>
+<h3>Benefits of Industrial visits to engineering Students:</h3>
+<ul>
+  <li>For students pursuing professional education industrial visits helps them gain hands-on experience of how industry operations are executed.</li>
+  <li>Industry visits bridge the gap between theoretical learning and practical training in a real-life environment.</li>
+  <li>Industry visits provide opportunity for active/interactive learning experiences in-class as well outside the classroom environment.</li>
+  <li>Industry visits help enhance interpersonal skills and communication techniques.</li>
+  <li>Students become more aware of industry practices and regulations during industry visits.</li>
+  <li>Industry visits broaden the outlook of students with exposure to different workforces from different industries.
+ </li>
+</ul>
+ <br><br>
+ <!--year wise visit-->
+
+
+<h4 style="margin-left: 70px;height: 30px;width: 200px;background-color:#DCDCDC;">YEAR 2018-19</h4>
+<div class="res_table">
+ <table class="customers">
+  <tr>
+    <th>Sr. No.</th>
+    <th>PLACE/ </th>
+    <th>INDUSTRY  DATE</th>
+    <th>DEPARTMENT</th>
+    <th>PEROID OF VISIT </th>
+    <th>No.Of Beneficiaries </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Seninumro Pvt .Ltd, Pune. </td>
+    <td>2018-10-05  </td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+      <td>60</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>S.T.Workshop ,Satara</td>
+     <td>2018-08-28</td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+    <td>50</td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Sitaram Maharaj Sugar Factory Khardi</td>
+    <td>2019-01-27</td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+    <td>55</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>Yashoda Iron Enterpriseses Kolhapur</td>
+    <td>2019-02-26</td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+    <td>57</td>
+  </tr>
+    <tr>
+      </tr>
+ </table>
+<br><br><h4 style="margin-left: 70px;height: 30px;width: 200px;background-color:#DCDCDC;">YEAR 2017-18</h4>
+ <div class="res_table">
+  <table class="customers">
+  <tr>
+    <th>Sr. No.</th>
+    <th>PLACE/ </th>
+    <th>INDUSTRY  DATE</th>
+    <th>DEPARTMENT</th>
+    <th>PEROID OF VISIT </th>
+    <th>No.Of Beneficiaries </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Yashodha Iron Enterprises, Kolhapur </td>
+    <td>2018-02-20  </td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+      <td>60</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sitaram Maharaj Sakhar Karkhana ( Khardi ) Ltd., Pandharpur.</td>
+     <td>2018-01-25</td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+    <td>60</td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>S.T. Workshop Solapur</td>
+    <td>2017-09-01</td>
+    <td>MECHANICAL ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+  </tr>
+
+ </table>
+</div></div>
+ <!--year wise visit-->
+
+
+
+</div>
+</div>
+
+
+
+<div id="VisionMission" class="tabcontent">
+  <div class="main">
+   <div class="title">Department Of Mechanical Engineering – [Achievements]</div>
+  <br><br>
+
+  <div class="title">Student Achievement</div>
+  <br>
+
+  <h4 style="margin-left: 50px;">2019-20</h4>
+  <br>
+  <div class="res_table">
+  <table class="customers" >
+    
+    <tr>
+      <th>SR.NO.</th>
+      <th>NAME OF THE STUDENT</th>
+      <th>TYPE OF EVENT</th>
+      <th>SUBJECT </th>
+      <th>DATE</th>
+      <th>REMARK</th>
+      <th>VENUE</th>
+    </tr>
+    <tr>
+      
+    </tr>
+
+    <tr>
+    </tr>
+
+
+
+  </table></div>
+</div></div>
+
+
+
+
+<div id="Association" class="tabcontent">
+  
+  <div class="main">
+    <div class="title">Mechanical Engineering Student Association</div>
+  <div style="margin:50px;">
+  
+  <h3 style="color: #800000;">Faculty Coordinator:</h3>
+
+       <b>CESA Faculty Coordinator:</b><span>  Mr.G.S.Misal.</span> <br>
+       <b> Event Coordinator:</b><span>  </span> <br><br>
+
+       <h3 style="color: #800000;">Student Coordinator:</h3>
+
+       <b>President: –</b><span>  </span> <br> 
+       <b>Vice President:-</b><span>  </span> <br>
+       <b>Treasurer:-</b><span> </span> <br>     
+
+       </div>
+
+
+
+  </div>
+</div>
+
+
+<div id="Gallery" class="tabcontent">
+  
+  <div class="main">
+    <br><br><br>
+     
+     <div class="title">Gallery</div>
+    <br><br><br>
+     
+      <main>
+
+     <div class="box"><img src="spc1.jpg"></div>
+    <div class="box"><img src="2.jpg"></div>
+    <div class="box" ><img src="3.jpg"></div>
+    <div class="box"><img src="4.jpg"></div>
+    <div class="box"><img src="5.jpg"></div>
+    <div class="box"><img src="6.jpg"></div>
+    <div class="box"><img src="7.jpg"></div>
+    <div class="box"><img src="8.jpg"></div>
+
+
+    </main>
+
+
+    
+  </div>
+</div>
+
+<div id="Faculties" class="tabcontent">
+  
+  <div class="main">
+    <div class="uppertitle">Faculties Of Mechanical Engineering</div>
+
+
+
+  <div class="card" style="width: 17rem;">
+      <center><img src="principle.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr.Deshmukh Ranjitsinh Ashok<br>
+        Principal<br>
+            <b>Qualification:</b>ME(Mechanical Engineering),PhD*<br>
+            <b>Experience:</b><br>
+            <b>Teaching :</b> 14 Yrs<br>
+            <b>Industrial :</b> 9 Yrs<br>
+            <b> E-Mail :</b>ranjitsinhdeshmukh222@gmail.com<br>
+            <b>Contact No. :</b>9763328461
+
+        </p>
+     </div>
+  </div>
+
+
+
+
+
+  <div class="card" style="width: 18rem;">
+      <center><img src="BhosaleG.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Bhosale Gangaram Sitaram<br>
+        I/C H.O.D<br>
+            <b>Qualification:</b> B.E. (Mech) M. E. (Design)*<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 9 Yrs<br>
+            <b>Industrial :</b>6 months<br>
+            <b> E-Mail :</b> gsbhosale1208@gmail.com<br>
+            <b>Contact No. :</b> 
+
+        </p>
+
+     </div>
+  </div>
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="KhandareD.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+       Mr. Khandare Dhanraj Sahadeo<br>
+      Lecturer<br>
+            <b>Qualification:</b> Qualification:BE(MECH) <br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 8 Yrs<br>
+            <b>Industrial :</b>2.5 Yrs<br>
+            <b> E-Mail :</b>  dhanrajkhandare@gmail.com<br>
+            <b>Contact No. :</b> 9860915071
+
+        </p>
+        
+     </div>
+  </div>
+
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="ajykumarbhosale.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Bhosale Ajaykumar Bhoju<br>
+      Lecturer<br>
+            <b>Qualification:</b> ME (Thermal Engg.), BE (MECH), DME<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 7.5 Yrs<br>
+            <b>Industrial :</b>2 Yrs<br>
+            <b> E-Mail :</b> ajaybhosale1988@gmail.com<br>
+            <b>Contact No. :</b> 8237114132
+
+        </p>
+        
+     </div>
+  </div>
+
+<!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="Bavache.png" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+       Mr. Bavache Sandip Datta<br>
+      Lecturer<br>
+            <b>Qualification:</b> ME (Design*) ,B.E. (MECH)<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 3.5 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> bavachesandip22@gmail.com<br>
+            <b>Contact No. :</b>  9960553434
+
+        </p>
+        
+     </div>
+  </div>
+
+<!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="KulkarniM.png" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr.Kulkarni Mangesh Vivekanand<br>
+        Instructor (Turner)<br>
+            <b>Qualification:</b>Computer(D.I.T)<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 3 Yrs<br>
+            <b>Industrial :</b>9 Months<br>
+            <b> E-Mail :</b> Mangeshkulkarni3oct@Gmail.com<br>
+            <b>Contact No. :</b> 9158561491
+
+        </p>
+        
+     </div>
+  </div>
+
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="KAZIFARUKMUSA.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr.Kazi Faruk Musa<br>
+       Instructor (Fitter)<br>
+            <b>Qualification:</b>I.T.I (Fitter) , Computer(MSCIT)<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 0 Yrs<br>
+            <b>Industrial :</b>6 Months<br>
+            <b> E-Mail :</b> fkazi503@gmail.com<br>
+            <b>Contact No. :</b> 8975074946
+
+        </p>
+        
+     </div>
+  </div>
+
+    <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="dudhane.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Dudhane Onkar Pravin<br>
+       Lecturer<br>
+            <b>Qualification:</b>BE MECH<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 0 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> omdudhane10@gmail.com<br>
+            <b>Contact No. :</b> 7709955925
+
+        </p>
+        
+     </div>
+  </div>
+
+
+    <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="SalunkheS.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Salunkhe Sagar Somanath<br>
+       Lecturer<br>
+            <b>Qualification:</b>B.E.(Mech)<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 0 Yrs<br>
+            <b>Industrial :</b>1 Yrs<br>
+            <b> E-Mail :</b> salunkhesagar9999@gmail.com<br>
+            <b>Contact No. :</b> 6209100100
+
+        </p>
+        
+     </div>
+  </div>
+
+    
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+        <footer>
+          <div class="footer_content">
+            <div class="left box">
+              <h2>Quick Links</h2>
+               <div class="content">
+                  <div class="links"><a href="index.html">Home</a></div>
+                  <div class="links"><a href="atrust.html">About Trust</a></div>
+                  <div class="links"><a href="department.html">Departments</a></div>
+                  <div class="links"><a href="gallery.html">Gallery</a></div>
+                  
+               </div>
+               <div class="social" >
+                  <a href="#"><i class="fa fa-facebook" ></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube" ></i></a>
+                </div>
+            </div>
+            <div class="middle box">
+               <h2>About Us</h2>
+              <div class="content">
+                <p> 
+                    Shivaji Polytechnic College, Sangola,<br>
+                    Sur. No.76/1, 77 , Sangola-Jath Road,<br>
+                    Sangola – 413309,<br>
+                    Tal- Sangola, Dist.- Solapur,<br>
+                    Maharashtra, India.<br>
+
+                    Phone – (02187)- 222852, 222853<br>
+                    Fax – (02187)- 222852, 222853<br>
+
+                    Web- www.spcsangola.com<br>
+                    Email:spcsangola@yahoo.com</p>
+                
+              </div>
+              
+            </div>
+            <div class="right box">
+              <h2>Contact Us</h2>
+              <div class="content">
+                <form action="#">
+                   <div class="email">
+                     <div class="text">Email *</div>
+                     <input type="email" name="" required>
+                   </div>
+
+                   <div class="msg">
+                     <div class="text">Message *</div>
+                     <textarea rows="2" cols="25"  required></textarea>
+                   </div>
+                   <div class="btn"><button>Submit</button></div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <center>&copy; Copyright 2020 - Shivaji Polytechnic College, Sangola. | All Rights Reserved.  Developed & Designed By - Vaibhavi Dixit.</center>
+          </div>
+        </footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" src="tog.js"></script>
+
+
+
+</body>
+</html>

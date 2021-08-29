@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+
+    
+     .res_table .title{
+      background-color:orange;
+      width: 90vw;
+      height: 3vw;
+      padding: 6px;
+      margin:auto;
+      color: white;
+      font-size:3vw;
+      font-family: verdana;
+      
+    }
+   .res_table li{
+      padding:5px;
+    }
+   .res_table p{
+      text-align: justify-all;
+       font-size:.8em;margin: auto;
+      text-align: justify;
+      width: 800px;
+      max-width: 100%;
+    }
+
+      .res_table .customers {
+        /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+        font-family: sans-serif;
+        border-collapse: collapse;margin: auto;margin-top: 30px;
+        max-width: 100%;width: 800px;
+      }
+
+      .res_table .customers tr:nth-child(even){background-color: #f2f2f2;}
+
+      .res_table .customers tr:hover {background-color: #ddd;}
+      .res_table .customers  td{
+        font-size:.6em;padding: 8px;
+      }
+
+      .res_table .customers th {
+        background-color: #f08080;
+        color: white;font-size: .7em;padding: 8px;
+      }
+      .res_table h2{margin:20px; margin-left: 50px;}
+
+
+      .res_table{
+        overflow-x: auto;
+      }
+
+
+  .main .title{
+      color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+margin-bottom: 3em;
+    }
+
+      #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    max-width: 100%;
+margin-bottom:4em;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 19px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f08080;
+  color: white;
+  font-size: 19px;
+}
+b{
+  margin: 1rem 0;
+}
+p{
+
+  text-align: justify-all;
+   font-size:16px;
+  text-align: justify;
+  max-width: 100%;
+}
+img{max-width: 100%;}
+  
+
+.main main{
+          margin-left: 50px;
+           width: 100%;
+           margin-top: 40px;
+    }
+    .main main .box{
+     width:250px;
+     height:150px;
+     float: left;
+     padding: 7px;
+     padding-left: 20px;  
+      overflow: hidden;
+          display: inline-block;
+
+
+    }
+
+    .main main img{
+     width: 250px;
+     height: 150px;
+      border-radius: 4px;
+
+    }
+
+    .main main img:hover{
+      transform: scale(2,2);
+      transition: .3s transform;
+
+    }
+         .title2{
+			color: black;
+    font-size: 20px;
+    font-family: verdana;
+  text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1rem;
+		}
+
+   #Aca-rules h4{ font-family: verdana;
+    font-size: .7em;
+    word-spacing: 3px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+		#Aca-rules li{
+			
+			margin-left: 30px;
+			font-family: sans-serif; 
+			text-align: justify-all;
+			padding-top:10px;
+			margin-right: 40px;
+			text-align: justify;
+			line-height: 25px;
+		}
+		#Aca-rules li{
+	margin-bottom: 20px;
+	font-size: .8em;
+}
+
+		
+
+		.main .lst li{font-size: 25px;
+                          }
+		.main a{
+			font-size: 24px;
+			font-family: verdana;
+			text-decoration: none;
+			color: black;
+
+		}
+		.main .lnk{  
+			 display: grid;
+                                             margin-top: 3em;
+
+			}
+
+		.main a{
+			font-size: 18px;
+			font-family: verdana;
+			text-decoration: none;
+		}
+		
+		.main  a:hover{
+			color: red;
+		}
+                   
+		p{
+			font-family: verdana;
+			margin-left: 50px;
+			font-size:.9em;
+		}
+
+		.main table, th, td {
+              border: 1px solid black;
+			  border-collapse: collapse;
+			  font-family: verdana;
+			  max-width:95vw;
+			  font-size:.9em;
+			  padding: 20px;
+			  line-height: 22px;
+
+		}
+		.main th:hover,td:hover{
+			background-color:#ddd; 
+			
+		}
+		.main table{
+			margin-top: 30px;
+		
+		    margin: auto;
+			padding: 10px;
+			
+
+		}
+
+
+      </style>
+
+</head>
+<body link="white" vlink="white">
+
+   <div class="header" >
+           
+             <div id="logo"><img src="logo.png" width="150px" height="150px;"></div>
+
+             <span onclick="func()" id="togicon">&#9776;</span>
+
+
+           <div id="text">
+             
+              <h3 >Ramkrishna Technical Education Society's , </h3>
+              <h2 > SHIVAJI  POLYTECHNIC COLLEGE, SANGOLA</h2>
+              <h4 >Approved by AICTE, New Delhi, Recognized by DTE, Mumbai (Govt. of Maharashtra) Affiliated to MSBTE Mumbai.</h4>
+            <p>An ISO 9001:2015 Certified Institute<br>
+            MSBTE Code : 1208 | DTE Code : D-6471</p>
+
+             </div>
+            
+           </div>
+           
+
+<!--navbar-->
+       
+       <div class="nav" id="navigation">
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="ainstitute.html">About Institute</a>
+                <a href="atrust.html">About Trust</a>
+                <a href="vision.html">Vision & Mission</a>
+               
+               
+
+
+              </div>
+            </li>
+
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Departments</a>
+    <div class="dropdown-content">
+      <a href="gsd.html">General Science Department</a>
+      <a href="cd.html">Computer Department</a>
+      <a href="ced.html">Civil Department</a>
+      <a href="me.html">Mechanical Department</a>
+      <a href="ej.html"> Electronics Department</a>
+     
+
+
+    </div>
+  </li>
+
+
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="course.html">Course Offered</a>
+      <a href="process.html">Admission Process</a>
+      <a href="admicell.html">Admission Cell </a>
+      <a href="fee.html">Fee Structure </a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Academic</a>
+    <div class="dropdown-content">
+      <a href="academic.html">Academic Calendar</a>
+      <a href="acarules.html">Academic Rules</a>
+      <a href="acasyllabus.html">Academic Syllabus </a>
+      
+    </div>
+  </li>
+
+
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Placements</a>
+    <div class="dropdown-content">
+      <a href="train.html">About Training And Placement</a>
+      <a href="recruiters.html">Our Recruiters</a>
+      <a href="placecell.html">Contact Placement Cell </a>
+      
+    </div>
+  </li>
+
+  
+  
+  <li><a href="lib.html">Library</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Alumni</a>
+    <div class="dropdown-content">
+      <a href="am.html">Alumni Meet</a>
+      <a href="ac.html">Alumni Cell</a>
+      <a href="ar.html">Alumni Regssistration </a>
+      
+      
+    </div>
+  </li>
+  
+  <li><a href="faci.html">Facilities</a></li>
+  <li><a href="edp.html">EDP Cell</a></li>
+
+
+     <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href="cont.html">Contact Form</a>
+      <a href="cont2.html">Principal</a>
+      <a href="cont3.html">Admistrative Department </a>
+      <a href="cont4.html">Head Of Department</a>
+      <a href="cont5.html">Admission Cell </a>
+      <a href="cont6.html">Transport Of Department</a>
+      
+      
+    </div>
+  </li>
+  
+
+
+
+</ul></div>
+
+
+
+
+
+<div class="outer">
+
+<div class="tab">
+<h4 style="    padding: 1rem; text-align: center; color: maroon;">ACADEMIC</h4>
+  <button class="tablinks" onclick="openCity(event, 'About-Trust')" >Academic Calendar</button>
+  <button class="tablinks" onclick="openCity(event, 'About-Institute')" >Student Help </button>
+  <button class="tablinks" onclick="openCity(event, 'President-Message')"  > Toppers Data</button>
+  <button class="tablinks" onclick="openCity(event, 'Secretary-Message')" id="defaultOpen">	Academic Syllabus</button>
+ <button class="tablinks" onclick="openCity(event, 'Aca-rules')">Academic rules</button>
+</div>
+
+<div id="About-Trust" class="tabcontent">
+<div class="main">
+
+<div class="title">Academic Calendar</div>
+  <br><br>
+
+<div class="res_table">
+      <table id="customers">
+      	<tr>
+      		<th>SR. NO.	</th>
+      		<th>NAME OF CONTENT</th>
+      		<th>YEAR</th>
+      		<th>DOCUMENT</th>
+      	</tr>
+
+      	<tr>
+      		
+      		<td>1		</td>
+      		<td>Academic Calendar </td>
+      		<td>2019-20</td>
+      		<td><a href="">(View Here)</a></td>
+      	</tr>
+
+      	<tr>
+      		
+      		<td>2</td>
+      		<td>Academic Calendar</td>
+      		<td>2018-19</td>
+      		<td><a href="">(View Here)</a></td>
+      	</tr>
+
+
+
+      </table>
+
+</div>
+</div></div>
+
+
+
+<div id="About-Institute" class="tabcontent">
+ <div class="main">
+
+           
+  
+		
+<table id="customers" style="margin:1rem;">
+	<tr>
+		<td>Directorate of Technical Education, Maharashtra State</td>
+		<td><a href="http://www.dtemaharashtra.gov.in/index.html">www.dte.org.in</a></td>
+		
+	</tr>
+	<tr>
+		<td>Maharashtra State Board of Technical Education</td>
+		<td><a href="https://msbte.org.in/">www.msbte.com</a></td>
+		
+	</tr>
+	<tr>
+		<td>Scholarship and Minority Scholarship</td>
+		<td><a href="https://mahaeschol.maharashtra.gov.in/MahaEschol/Scholarships/Account/Login.aspx#1#1">www.mahaeschol.maharashtra.gov.in/</a></td>
+		
+	</tr>
+	<tr>
+		<td>Cast Validity</td>
+		<td><a href="www.barti.maharashtra.gov.in/ECasteValidation/CCVIS/Index.html">www.barti.maharashtra.gov.in/ECasteValidation/CCVIS/Index.html</a></td>
+		
+	</tr>
+	
+  
+
+</table>
+		
+
+
+</div>
+</div>
+
+<div id="President-Message" class="tabcontent">
+ <div class="main">
+
+
+   <div class="title">Computer Engineering :</div>
+   
+      <div class="res_table">
+      <table id="customers">
+        <tr>
+          <th>Year</th>
+          <th>Rank</th>
+          <th>Name Of Student</th>
+          <th>% Of Marks</th>
+          
+
+        </tr>
+        <tr>
+          <td>2019-20</td>
+          <td>1</td>
+          <td>Dixit Vaibhavi Dattatraya </td>
+          <td>96.57 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>2</td>
+          <td>Babar Manali Mohan </td>
+          <td>95.29 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>3</td>
+          <td>Babar Mrunali Mohan </td>
+          <td>95.00 %</td>
+        </tr>
+        
+        <tr>
+          <td>2019-20</td>
+          <td>4</td>
+          <td>Kshirsagar Vaishnavi Anil </td>
+          <td>93.71 %</td>
+        </tr>
+
+
+
+      </table></div>
+
+<br>
+     
+   <div class="title">Civil Engineering :</div>
+   <div class="res_table">
+      <table id="customers">
+        <tr>
+          <th>Year</th>
+          <th>Rank</th>
+          <th>Name Of Student</th>
+          <th>% Of Marks</th>
+          
+
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>1</td>
+          <td>Gawane Jyoti</td>
+          <td>96.00 %</td>
+        </tr>
+        <tr>
+          <td>2019-20</td>
+          <td>2</td>
+          <td>Ghadge Vaibhav</td>
+          <td>93.50 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>3</td>
+          <td>Pawar Pruthviraj</td>
+          <td>93.00 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>4</td>
+          <td>Lendave Mayuri</td>
+          <td>91.14 %</td>
+        </tr>
+
+        
+        
+       
+
+
+      </table></div>
+       
+<br>
+
+   <div class="title">Mechanical Engineering :</div>
+   <div class="res_table">
+      <table id="customers">
+        <tr>
+          <th>Year</th>
+          <th>Rank</th>
+          <th>Name Of Student</th>
+          <th>% Of Marks</th>
+          
+
+        </tr>
+        <tr>
+          <td>2019-20</td>
+          <td>1</td>
+          <td>Pawar Mayuri</td>
+          <td>94.71 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>2</td>
+          <td>Pawar Kajal</td>
+          <td>93.86 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>3</td>
+          <td>Sawant Rahul </td>
+          <td>90.19 %</td>
+        </tr>
+        
+        <tr>
+          <td>2019-20</td>
+          <td>4</td>
+          <td>Pawar Aniket</td>
+          <td>90.00 %</td>
+        </tr>
+
+
+
+      </table></div>
+
+    <br>
+   <div class="title">Electronics and Telecommunication Engineering :</div>
+   <div class="res_table">
+      <table id="customers">
+        <tr>
+          <th>Year</th>
+          <th>Rank</th>
+          <th>Name Of Student</th>
+          <th>% Of Marks</th>
+          
+
+        </tr>
+        <tr>
+          <td>2019-20</td>
+          <td>1</td>
+          <td>Chougule Punam</td>
+          <td>94.71 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>2</td>
+          <td>Chougule Bhagyashri</td>
+          <td>92.71 %</td>
+        </tr>
+
+        <tr>
+          <td>2019-20</td>
+          <td>3</td>
+          <td>Chougule Rutuja</td>
+          <td>92.15 %</td>
+        </tr>
+
+      
+        <tr>
+          <td>2019-20</td>
+          <td>4</td>
+          <td>Kadam Swapnali</td>
+          <td>90.00 %</td>
+        </tr>
+        
+
+      </table></div>
+
+            
+
+    
+
+
+  </div>
+</div>
+
+
+
+<div id="Secretary-Message" class="tabcontent">
+  <div class="main">
+ 		<div class="title">&nbsp;&nbsp;Academic Syllabus</div>
+	
+
+<ul class="lst">	
+ <li>Computer Engineering</li>
+  <ul><li><a href="4.pdf" target="_blank">I Scheme Final Curriculum</a></li></ul>
+
+    <li> Electronics & Telecommunication</li>
+   <ul><li><a href="5.pdf" target="_blank">I Scheme Final Curriculum</a></li></ul>
+
+<li>Mechanical Engineering</li>
+    <ul><li><a href="6.pdf"target="_blank">I Scheme Final Curriculum</a></li></ul>
+ <li>Civil Engineering</li>
+    <ul><li><a href="7.pdf"target="_blank">I Scheme Final Curriculum</a></li></ul></ul>
+	
+
+
+
+</div>
+ </div>
+
+
+
+<div id="Aca-rules" class="tabcontent">
+  <div class="main">
+		<div class="title">Academic Rules</div>
+	<br><br>
+ 
+  <h4 style="font-family:verdana ;
+			 font-size:.7em;word-spacing: 3px;margin: auto; width: 700px; max-width: 100%;">
+     The students taking admission in Shivaji Polytechnic College, Sangola should abide by the rules mentioned below.</h4>
+  
+<br>
+  <div class="title2">General Rules</div>
+  <br>
+
+  <ol type="1 ">
+  	<li>The required documents should be submitted as and when required.</li>
+  	<li>Each student shall conduct herself/himself, both within and outside the campus of the Institute in a manner befitting a student of a prestigious institute. Each student shall show due respect and courtesy to the teachers, administrators, staff of the Institute, and to the visitors of the Institute, and good behavior to fellow students.</li>
+  	<li>Any act of indiscipline of a student reported to the Dean, Student affairs, shall be discussed in a Disciplinary Action Committee of the institute. The Committee shall enquire into the charges and recommend suitable punishment if the charges are substantiated</li>
+  	<li>Lack of courtesy and decorum; unbecoming conduct within and outside the Institute; willful damage to Institute property, removal of any property belonging to the Institute, fellow students or other personnel of the Institute; use of abusive and offensive language;  will not be allowed and it is considered as  violation of the code of conduct.</li>
+  	<li>If a student is found guilty of malpractice in examinations then he/she shall be punished as per the rules of M.S.B.T.E</li>
+  	<li>Students are prohibited to take part in ragging, political activity or any activity which is detrimental to the dignity of the institute. Any student found violating the rule or bringing disrepute to the institute will be expelled from the institute.</li>
+  	<li>If a student is involved in any kind of ragging, the student shall be liable for strict action as per Maharashtra anti-ragging act 1999, which is in effect from 15th May 1999.</li>
+  	<li>Students are required to be dressed in the college uniform on the days fixed and to be neatly and decently dressed on the other days of the week when in campus.</li>
+  	<li>All the students must carry I-card everyday to college and shall show the same on demand by any faculty/official of the Institute.</li>
+  	<li>Any student who alters or intentionally mutilates an ID card or who uses the ID card of another student or allows his/her ID card to be used by another, student shall be subjected to disciplinary action.</li>
+  	<li>The students should not involve in any activity such as common off. If they are found to be involved in common off, are liable to disciplinary action.</li>
+  	<li>Use of cell phones is strictly prohibited in all academic areas of the campus. Use of cell phones would entail confiscation of the handset. It would be returned only when students will report at the institute with his/her parent.</li>
+  	<li>Late arrival and early departure at or from a class are recorded as absence from the class. Students are not allowed to leave the institute during working hours without the written permission of the HOD / class in charge.</li>
+  	<li>Students will not operate any machinery / equipment without the permission of the instructor.</li>
+  	<li>It is herby instructed to all students to handle Laboratory Equipments, Machines and Computers in the institute with proper care.</li>
+  	<li>It is advised to all students to use internet facility to the maximum extent ethically. The library facilities shall be properly used without violation of rules and regulations of  Library.</li>
+  	<li>No responsibility will be accepted by the institute for any injury, loss or damage to the personal articles of students.</li>
+  	<li>It is compulsory for the students to attend functions /activities organized by the institute on various occasions like Independence Day, Republic Day, Annual Day, etc whether the function falls on a working day or on holidays. Absence from such functions without valid reasons will invite disciplinary action.</li>
+  	<li>The students will compensate damage to institute property/furniture caused by neglect or willful damage. Defacing the walls or institute property will be viewed seriously.</li>
+  	<li>Students must pay their fee/dues on or before the prescribed deadline. Student once admitted in the institute shall follow instructions issued from time to time</li>
+  	<li>All applications must be addressed to the Principal through proper channel.</li>
+  	<li>The Principal reserves the right to modify any of the Institute rules as and when necessary.</li>
+
+
+  </ol>
+</div></div>
+
+
+
+</div>
+
+
+    
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+        <footer>
+          <div class="footer_content">
+            <div class="left box">
+              <h2>Quick Links</h2>
+               <div class="content">
+                  <div class="links"><a href="index.html">Home</a></div>
+                  <div class="links"><a href="atrust.html">About Trust</a></div>
+                  <div class="links"><a href="department.html">Departments</a></div>
+                  <div class="links"><a href="gallery.html">Gallery</a></div>
+                  
+               </div>
+               <div class="social" >
+                  <a href="#"><i class="fa fa-facebook" ></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube" ></i></a>
+                </div>
+            </div>
+            <div class="middle box">
+               <h2>About Us</h2>
+              <div class="content">
+                <p> 
+                    Shivaji Polytechnic College, Sangola,<br>
+                    Sur. No.76/1, 77 , Sangola-Jath Road,<br>
+                    Sangola – 413309,<br>
+                    Tal- Sangola, Dist.- Solapur,<br>
+                    Maharashtra, India.<br>
+
+                    Phone – (02187)- 222852, 222853<br>
+                    Fax – (02187)- 222852, 222853<br>
+
+                    Web- www.spcsangola.com<br>
+                    Email:spcsangola@yahoo.com</p>
+                
+              </div>
+              
+            </div>
+            <div class="right box">
+              <h2>Contact Us</h2>
+              <div class="content">
+                <form action="#">
+                   <div class="email">
+                     <div class="text">Email *</div>
+                     <input type="email" name="" required>
+                   </div>
+
+                   <div class="msg">
+                     <div class="text">Message *</div>
+                     <textarea rows="2" cols="25"  required></textarea>
+                   </div>
+                   <div class="btn"><button>Submit</button></div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <center>&copy; Copyright 2020 - Shivaji Polytechnic College, Sangola. | All Rights Reserved.  Developed & Designed By - Vaibhavi Dixit.</center>
+          </div>
+        </footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" src="tog.js"></script>
+
+
+
+</body>
+</html>

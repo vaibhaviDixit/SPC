@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+
+    
+    
+     .res_table .title{
+      background-color:orange;
+      width: 90vw;
+      height: 3vw;
+      padding: 6px;
+      margin:auto;
+      color: white;
+      font-size:3vw;
+      font-family: verdana;
+      
+    }
+   .res_table li{
+      padding:5px;
+    }
+   .res_table p{
+      text-align: justify-all;
+       font-size:.8em;margin: auto;
+      text-align: justify;
+      width: 800px;
+      max-width: 100%;
+    }
+
+      .res_table .customers {
+        /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+        font-family: sans-serif;
+        border-collapse: collapse;margin: auto;margin-top: 30px;
+        max-width: 100%;width: 800px;
+      }
+
+      .res_table .customers tr:nth-child(even){background-color: #f2f2f2;}
+
+      .res_table .customers tr:hover {background-color: #ddd;}
+      .res_table .customers  td{
+        font-size:.6em;padding: 8px;
+      }
+
+      .res_table .customers th {
+        background-color: #f08080;
+        color: white;font-size: .7em;padding: 8px;
+      }
+      .res_table h2{margin:20px; margin-left: 50px;}
+
+
+      .res_table{
+        overflow-x: auto;
+      }
+
+
+  .main .title{
+      color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+    }
+
+      #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    max-width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 19px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f08080;
+  color: white;
+  font-size: 19px;
+}
+b{
+  margin: 1rem 0;
+}
+.main p{
+
+  text-align: justify-all;
+   font-size:16px;
+  text-align: justify;
+  max-width: 100%;
+}
+img{max-width: 100%;}
+  
+
+.main main{
+          margin-left: 50px;
+           width: 100%;
+           margin-top: 40px;
+    }
+    .main main .box{
+     width:250px;
+     height:150px;
+     float: left;
+     padding: 7px;
+     padding-left: 20px;  
+      overflow: hidden;
+          display: inline-block;
+
+
+    }
+
+    .main main img{
+     width: 250px;
+     height: 150px;
+      border-radius: 4px;
+
+    }
+
+    .main main img:hover{
+      transform: scale(2,2);
+      transition: .3s transform;
+
+    }
+        @media screen and (max-width:800px){
+
+
+        .main main .box{
+           width:150px;
+           height:100px;
+           float: left;
+           padding: 7px;
+           padding-left: 10px;  
+            overflow: hidden;
+                display: inline-block;
+
+
+              }
+
+        .main main img{
+         width: 150px;
+         height: 100px;
+          border-radius: 4px;
+
+        }
+        }
+.card{
+
+    display: inline-block;
+    padding: 0px;
+    margin: 15px;
+    border: none;
+
+  }
+  .card img{
+    height: 9em;
+    width: 9em;
+
+    /*height: 190px;
+    width: 200px;*/
+    border-radius: 10%;
+    padding: 3px;
+  }
+  .card p{
+    font-size: 17px;
+    padding: 0px 10px;
+  }
+
+  .uppertitle{
+          color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+          text-align: center;
+    }
+
+      </style>
+
+</head>
+<body link="white" vlink="white">
+
+   <div class="header" >
+           
+             <div id="logo"><img src="logo.png" width="150px" height="150px;"></div>
+
+             <span onclick="func()" id="togicon">&#9776;</span>
+
+
+           <div id="text">
+             
+              <h3 >Ramkrishna Technical Education Society's , </h3>
+              <h2 > SHIVAJI  POLYTECHNIC COLLEGE, SANGOLA</h2>
+              <h4 >Approved by AICTE, New Delhi, Recognized by DTE, Mumbai (Govt. of Maharashtra) Affiliated to MSBTE Mumbai.</h4>
+            <p>An ISO 9001:2015 Certified Institute<br>
+            MSBTE Code : 1208 | DTE Code : D-6471</p>
+
+             </div>
+            
+           </div>
+           
+
+<!--navbar-->
+       
+       <div class="nav" id="navigation">
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="ainstitute.html">About Institute</a>
+                <a href="atrust.html">About Trust</a>
+                <a href="vision.html">Vision & Mission</a>
+               
+               
+
+
+              </div>
+            </li>
+
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Departments</a>
+    <div class="dropdown-content">
+      <a href="gsd.html">General Science Department</a>
+      <a href="cd.html">Computer Department</a>
+      <a href="ced.html">Civil Department</a>
+      <a href="me.html">Mechanical Department</a>
+      <a href="ej.html"> Electronics Department</a>
+     
+
+
+    </div>
+  </li>
+
+
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="course.html">Course Offered</a>
+      <a href="process.html">Admission Process</a>
+      <a href="admicell.html">Admission Cell </a>
+      <a href="fee.html">Fee Structure </a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Academic</a>
+    <div class="dropdown-content">
+      <a href="academic.html">Academic Calendar</a>
+      <a href="acarules.html">Academic Rules</a>
+      <a href="acasyllabus.html">Academic Syllabus </a>
+      
+    </div>
+  </li>
+
+
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Placements</a>
+    <div class="dropdown-content">
+      <a href="train.html">About Training And Placement</a>
+      <a href="recruiters.html">Our Recruiters</a>
+      <a href="placecell.html">Contact Placement Cell </a>
+      
+    </div>
+  </li>
+
+  
+  
+  <li><a href="lib.html">Library</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Alumni</a>
+    <div class="dropdown-content">
+      <a href="am.html">Alumni Meet</a>
+      <a href="ac.html">Alumni Cell</a>
+      <a href="ar.html">Alumni Registration </a>
+      
+      
+    </div>
+  </li>
+  
+  <li><a href="faci.html">Facilities</a></li>
+  <li><a href="edp.html">EDP Cell</a></li>
+
+
+     <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href="cont.html">Contact Form</a>
+      <a href="cont2.html">Principal</a>
+      <a href="cont3.html">Admistrative Department </a>
+      <a href="cont4.html">Head Of Department</a>
+      <a href="cont5.html">Admission Cell </a>
+      <a href="cont6.html">Transport Of Department</a>
+      
+      
+    </div>
+  </li>
+  
+
+
+
+</ul></div>
+
+
+
+
+
+<div class="outer">
+
+<div class="tab">
+<h4 style="    padding: 1rem; text-align: center; color: maroon;">Computer Engineering</h4>
+  <button class="tablinks" onclick="openCity(event, 'About-Trust')" id="defaultOpen">Department Structure</button>
+  <button class="tablinks" onclick="openCity(event, 'About-Institute')" >Advisory Board </button>
+  <button class="tablinks" onclick="openCity(event, 'President-Message')"> Laboratories</button>
+  <button class="tablinks" onclick="openCity(event, 'Secretary-Message')">M.O.U</button>
+  <button class="tablinks" onclick="openCity(event, 'Manager-Message')">Industrial Visit</button>
+  <button class="tablinks" onclick="openCity(event, 'Principal-Message')">Workshop And Guest Lectures </button>
+  <button class="tablinks" onclick="openCity(event, 'VisionMission')">Achievements </button>
+  <button class="tablinks" onclick="openCity(event, 'Association')">Students Association </button>
+  <button class="tablinks" onclick="openCity(event, 'Gallery')">Department Gallery </button>
+  <button class="tablinks" onclick="openCity(event, 'Faculties')"> Faculties </button>
+</div>
+
+<div id="About-Trust" class="tabcontent">
+<div class="main">
+
+  <div class="title">Department Of Computer Engineering – [Department Structure]</div>
+  <br><br>
+  <span><b>Departmental Structure</b></span>
+  <p>To work effectively departmental work is divided in faculties. Each faculty is enrolled in various activities in department and institute. HOD is the key person to manage those activities through the faculty and support them to enhance their performance.</p>
+
+
+  <span><b>Mentoring System</b></span><br>
+  <span><b>Objective:</b></span><br>  
+
+  <p>Within 2-3 years of diploma, Computer Engineering diploma program will demonstrate, or be prepared to achieve:
+Successful careers, as reflected by advancement to positions that include greater responsibility and intellectual challenge
+Successful performance in professional diploma program</p>
+
+<span><b>Guardian Faculty System</b></span><br>
+<span><b> Number of Guardian Faculty:</b>2-3 per class</span><br>
+<span><b>  Number of Students Guardian Faculty: </b>15-20</span><br>
+
+<p>Students are assigned to Guardian Faculty by Principal, GFM CO-ordinator, HOD and class teacher. The student record is maintained with details such as address, mobile numbers of parents and students, previous record, academic performance. Guardian Faculty help students by monitoring their performance, behavior and assist them in lagging areas. Counseling of students is done at personal level, if needed. Parents‟ meet is held once in a semester and student attendance and Unit Test marks are presented in the meeting. The bright students are felicitated in parents meet. For improving the student performance, remedial classes or tests/assignments/ paper solving sessions are arranged when needed.</p>
+<br>
+
+<span><b> Mentors list:</b></span>
+<br><br>
+<table id="customers">
+  <tr>
+    <th>Class</th>
+    <th>Name of Mentor</th>
+    <th>Batch</th>
+  </tr>
+
+  <tr>
+    <td>Third Year Computer Engineering </td>
+    <td>Mr.S. M. Sawant</td>
+    <td>C2-C3 ( Roll No. 21 to 40 )</td>
+  </tr>
+
+  <tr>
+    <td>Second Year Computer Engineering</td>
+    <td>Mrs. P. B. Ghodake  </td>
+    <td>C1 (Roll No. 1 to 15 )</td>
+  </tr>
+  <tr>
+    <td>Second Year Computer Engineering</td>
+    <td>Mrs. P. A. Gade </td>
+    <td>C3 ( Roll No. 31 to 40 )</td>
+  </tr>
+  <tr>
+    <td>Second Year Computer Engineering</td>
+    <td>Mr. M. S. Dound </td>
+    <td>C3 ( Roll No 41 to 45 )</td>
+  </tr>
+  <tr>
+    <td>Second Year Computer Engineering</td>
+    <td>Mr. G . S . Misal   </td>
+    <td>(Roll Number - 1 to 16 & 48)</td>
+  </tr>
+  
+
+</table>
+<br>
+<img src="ds_co.jpg">
+
+
+
+
+
+</div>
+</div>
+
+<div id="About-Institute" class="tabcontent">
+ <div class="main">
+   <br>
+  <div class="title">Department of Computer Engineering -[Advisory Board]</div>
+  <h2 style="text-align: justify-all;">DAAB Committee Member</h2>
+  <p style="text-align: justify-all;">The Departmental Academic Advisory Board (DAAB) has been formed with the objective of remaining up to date with the latest requirements of the industry and incorporating necessary components in the curriculum as much as possible.</p>
+  <p >The DAAB is enriched with members from the department as well as industry persons who periodically guide the departmental activities and suggest improvements of the program. The members of Departmental Advisory Board (DAAB) are:</p>
+    <br>
+  <table border="1px" id="customers" 
+cellspacing="3px" cellpadding="5px" >
+    
+    <tr > 
+        <th>Sr.NO</th>
+        <th>Name of Member</th>
+        <th> Designation</th>
+        <th>Email Id</th>
+        <th>Contact</th>
+
+
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mr.R.A.Deshmukh</td>
+      <td>Chairman</td>
+      <td>ranjitsinhdeshmukh222@gmail.com</td>
+      <td>9763328461</td>
+
+    </tr>
+    
+    <tr>
+      <td>3</td>
+      <td>Mr.S.M.Sawant</td>
+      <td>HOD</td>
+      <td>
+        savantshankar10@gmail.com</td>
+      <td>8600386007</td>
+
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Prof. R. R. Tate</td> 
+      <td>Academic Expert </td>
+      <td>tahe_rc@rediffmail.com</td>
+      <td>9000988142</td>
+
+    </tr>
+  <tr>
+      <td>5</td>
+      <td>Prof. S. M. Shinde</td> 
+      <td>Academic Expert </td>
+      <td>smshinde@coe.sveri.ac.in</td>
+      <td>9403751039</td>
+
+    </tr>
+       <tr>
+      <td>6</td>
+      <td>Prof. S. B. Thigale</td>  
+      <td>Academic Expert </td>
+      <td>somnath.thigale@gmail.com</td>
+      <td>9970158565</td>
+
+    </tr>
+
+     <tr>
+      <td>7</td>
+      <td>Ms. Madhavi Jangale</td>  
+      <td>Industry / Corporate Expert </td>
+      <td>madhavijangale@gmail.com</td>
+      <td>9028613947</td>
+
+    </tr>
+     <tr>
+      <td>8</td>
+      <td>Ms. Pranali R. Patne</td> 
+      <td>Meritorious Alumnus </td>
+      <td>patnepr16.it@coep.ac.in </td>
+      <td>9923030027</td>
+
+    </tr>
+     <tr>
+      <td>9</td>
+      <td>Mr. Bahubali Kandale</td> 
+      <td>Industry Expert for specialized course</td>
+      <td>bahubalikandale@technowingsindia.com  </td>
+      <td>7588216108</td>
+
+    </tr>
+     
+        <tr>
+      <td>10</td>
+      <td>Mr. Bahubali Kandale</td> 
+      <td>Industry Expert for specialized course</td>
+      <td>bahubalikandale@technowingsindia.com  </td>
+      <td>7588216108</td>
+
+    </tr>
+  
+    <tr>
+      <td>11</td>
+      <td>
+    Mr. M. S. Dound </td> 
+      <td>Internal Faculty</td>
+      <td>maheshdound63@gmail.com </td>
+      <td>8600142461</td>
+
+    </tr>
+      <tr>
+      <td>12</td>
+      <td>
+    Mrs. P. A. Gade   </td> 
+      <td>Internal Faculty</td>
+      <td>priyankamangale8@gmail.com</td>
+      <td>7038800926</td>
+
+    </tr>
+    
+            <tr>
+      <td>13</td>
+      <td>
+    Mr.Misal G.S</td> 
+      <td>Internal Faculty</td>
+      <td>ganeshmisal417@gmail.com</td>
+      <td>9145087930</td></tr>
+             
+             <tr>
+        <td>14</td>
+      <td>
+      Mrs. Chaitrali T. Dhumal-Naikude.</td>  
+      <td>Internal Faculty</td>
+      <td>chaitrali.dhumal25@gmail.com</td>
+      <td>8830555931</td>
+      </tr>
+
+             <tr>
+        <td>15</td>
+      <td>
+      Mrs. Raste Komal Chandrakant.</td>  
+      <td>Internal Faculty</td>
+      <td>komalraste19@gmail.com</td>
+      <td> 7057169008</td>
+             </tr>
+           
+            <tr>
+        <td>16</td>
+      <td>
+      Mr. ligade</td> 
+      <td>Internal Faculty</td>
+      <td>@gmail.com</td>
+      <td> </td>
+      </tr>
+      
+      
+      
+
+
+  </table>
+</div>
+</div>
+
+<div id="President-Message" class="tabcontent">
+ <div class="main">
+
+ <div class="title">Lab Details</div>
+<h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: Linux Lab</h2>
+  <p >Since its inception in 2010, Linux Lab has carved its place in the domain of consultative learning and training solutions for both corporate clients and end users. Linux Lab is committed to impart Training & IT Service Support in various OpenSource Technologies of core platform is on Linux, VMware & Cloud. Nowadays changes are a daily occurrence. Only those who manage to filter the important innovations out of a multitude are able to satisfy their clients by using Linux Platform.</p>
+
+  <div class="res_table">
+
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2" >Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th rowspan="2">AREA IN SQUARE FEET</th>
+      <th rowspan="2">TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>1</td>   
+        <td><ul>
+          <li>PC</li>
+          <li>Printer</li>
+          <li>Motherboard</li>
+          <li>D-Link Switch</li>
+          <li>UPSD-Link cat 6 Cables</li>
+          <li>D-Link RJ-45 Connector</li>
+        
+        </ul> </td>
+        <td>Ms.Dhumal C.T</td>        
+        <td>Lecturer</td>
+        <td>BE.IT</td>
+        <td>690 Squre Feet</td>
+        <td>5,91,937</td>
+      </tr>
+
+
+  </table>
+ </div>
+
+  <!--2nd table-->
+  <h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: Networking Lab</h2>
+  <p >The goal of this lab is to investigate issues in wire line and wireless networks, mobile computing and multimedia, and to find solutions to the technical problems in these areas. The future integration of these two technologies will also require solutions to the specific problems that arise with these combined. This lab also deal with network topology problems, network monitoring and management, routing, and peer-to-peer networking.</p>
+
+  <div class="res_table">
+
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><ul>
+          <li> Dell vostro 230 desktop PC </li>
+          <li>D-Link 24 Port Switch</li>
+          <li>D-Link cable cat-6</li>
+          <li> D-Link RJ-45 Connector</li>
+          <li>UPS</li>
+          <li> Micro Soft Windows Server 2008</li>
+          <li> LCD Projector</li>
+          <li> Printer</li>
+        
+        </ul> </td>
+        <td>Ms.Ghodake P.B.</td>                
+        <td>Lecturer</td>
+        <td>B.E.CSE</td>
+        <td>690 Squre Feet</td>
+        <td>6,99,159</td>
+      </tr>
+
+
+  </table></div>
+       
+       <!--3rd table-->
+  <h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: Relational Database Management System</h2>
+  <p >Database Management System or DBMS in short refers to the technology of storing and retrieving users data with utmost efficiency along with appropriate security measures. This tutorial explains the basics of DBMS such as its architecture, data models, data schemas, data independence, E-R model, relation model, relational database design, and storage and file structure and much more.</p>
+
+  <div class="res_table">
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><ul>
+          <li> Dell optiplex 380 Desktop PC</li>
+          <li>D-Link 24 port switch</li>
+          <li>D-Link cable cat-6</li>
+          <li> D-Link RJ-45 Connector</li>
+          <li>UPS</li>
+          <li>Oracle 11g Standard edition</li>
+          <li>Battries</li>
+          <li> Battery Rack</li>
+        
+        </ul> </td>
+        <td>Mrs. Raste K.C.</td>                
+        <td>Lecturer</td>
+        <td>B.E.CS</td>
+        <td>690 Squre Feet</td>
+        <td>7,74,937</td>
+      </tr>
+
+
+  </table></div>
+
+   <!--4th table-->
+  <h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: Software Testing Lab</h2>
+  <p >The Software Testing Laboratory (STL) focuses on contemporary and future challenges in testing of embedded software system. The objectives of Software Testing Lab are to improve the current body of knowledge in software testing, and to disseminate results. To achieve this, we regularly publish in the main software testing venues, try to keep an open mind, and continuously engage in diverse academic and industrial collaboration.</p>
+
+  <div class="res_table">
+
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><ul>
+          <li> Dell optiplex 380 Desktop PC</li>
+          <li>D-Link 24 port switch</li>
+          <li>D-Link cable cat-6</li>
+          <li> D-Link RJ-45 Connector</li>
+          <li>UPS</li>
+          <li>Oracle 11g Standard edition</li>
+          <li>Battries</li>
+          <li> Battery Rack</li>
+          <li>Star UML</li>
+        
+        </ul> </td>
+        <td>Mr. Misal G.S.</td>               
+        <td>Lecturer</td>
+        <td>B.E.CSE</td>
+        <td>690 Squre Feet</td>
+        <td>6,38,427</td>
+      </tr>
+
+
+  </table>
+       </div>
+
+        <!--5th table-->
+  <h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: Computer Fundamental Lab</h2>
+  <p >In a layman language, a computer is a fast calculating device that can perform arithmetic. Although the computer was originally invented mainly for doing high speed and accurate calculations, it is not just a calculating device. It gets the data through an input device, processes it as per the instructions given and information as output. We can define a computer follows. "A computer is fast electronic device that processes the input data according to the instructions given by the programmer/user and provides the desired information as output". Term Meaning Data A set of basic facts and entities which itself has no Meaning. Information Data which has some meaning or value. Instruction A statement given to computer to perform a task Input Data and Instructions given to computer Process Manipulation of data output Information obtained after processing of data 2. Importance of Computer Computer plays a vital role for processing of data in an organization. Computers help in processing volumes of data efficiently and accurately within short time. A computer has the following characteristics, which makes it so important for an organization: 1. Fast: A computer is so fast that it can perform the given task (arithmetical of logical) in few seconds as compared to man who can spend many months for doing the same task. A computer can process millions of instruction per second. 2. Accurate: While doing calculations, a computer is more accurate than a man. Man can make mistakes in calculations but a computer does not, if it is provided with accurate instruction. 3. High Memory: A computer has much more memory of storage capacity than human beings. It can store millions of data and instructions, which can be retrieved and recalled even after number of years. This in not possible in cast of human brain.</p>
+
+   <div class="res_table">
+
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><ul>
+          <li> Dell Vostro 230 Desktop PC</li>
+          <li>D-Link 24 port switch</li>
+          <li>D-Link cable cat-6</li>
+          <li> Canon LBP 2900 Printer</li>
+          <li>Scanner</li>
+          <li>UPS</li> 
+          <li>Battries</li>
+          <li> Battery Rack</li>
+          <li>Star UML</li>
+        
+        </ul> </td>
+        <td>Mrs. Gade P.A.</td>               
+        <td>Lecturer</td>
+        <td>M.E.CSE</td>
+        <td>690 Squre Feet</td>
+        <td>5,77,929</td>
+      </tr>
+
+
+  </table></div>
+
+   <!--6th table-->
+  <h2 style="font-size:.8em;text-align: justify-all;">Name of the laboratory: JAVA Prograaming Laboratory</h2>
+  
+    <div class="res_table">
+  <table border="1px" class="customers" >
+    <tr>
+      <th rowspan="2">Sr.No</th>
+      <th rowspan="2">NAME OF IMPORTANT EQUIPMENT’S </th>
+      <th colspan="3">TECHNICAL MANPOWER SUPPORT</th>
+      <th>AREA IN SQUARE FEET</th>
+      <th>TOTAL INVESTMENT</th>
+  
+      </tr>
+      <tr>
+        <td>NAME OF TECHNICAL STAFF </td>
+        <td>DESIGNATION</td>
+        <td>QUALIFICATION</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><ul>
+          <li> Dell optiplex 380 Desktop PC</li>
+          <li>D-Link 24 port switch</li>
+          <li>D-Link cable cat-6</li>
+          <li> D-Link RJ-45 Connector</li>
+          <li>UPS</li>
+          <li>HR vision CCTV Camer</li>
+          <li>Battries</li>
+          
+        
+        </ul> </td>
+        <td>Mr.S.M.Sawant</td>                      
+        <td>Lecturer</td>
+        <td>M. E . (Computer Science and Engineering)</td>
+        <td>690 Squre Feet</td>
+        <td>5,91,537/-</td>
+      </tr>
+
+
+  </table></div>
+       
+
+
+  </div>
+</div>
+
+
+
+<div id="Secretary-Message" class="tabcontent">
+  <div class="main">
+
+    
+  <div class="title">Department Of Computer Engineering – [M.O.U.]</div>
+  <br><br>
+  <span><b>Departmental MOUs</b></span><br><br>
+  <p>Department has MoU with eminent computer industries which helped department to complete its objective with massive success.</p><br><br>
+  <span><b>Objective:</b></span><br><br>
+  <p>To increase the interaction with the growing computer industry to develop competent and professional computer engineers to give best results while working in their respective field of work.</p>
+  <br><br>
+   
+   <div class="res_table">
+
+  <table class="customers">
+    
+    <tr>
+      <th>SR. NO.     </th>
+      <th>COMPANY</th>
+      <th>DEPARTMENT</th>
+      <th>YEAR</th>
+      <th>DATE</th>
+      <th>MOU PEROID</th>
+    </tr>
+  </table>
+</div>
+
+    </div>
+</div>
+
+
+<div id="Manager-Message" class="tabcontent">
+<div class="main">
+  <div class="title">Department Of Computer Engineering – [Industrial Visit]</div>
+  <h3>INDUSTRIAL VISITS</h3>
+  <p>Industrial visit has its own importance in a career of a student who is pursuing a professional degree. It is considered as a part of college curriculum and objectives of industrial visit is to provide students an insight regarding internal working of companies. We know, theoretical knowledge is not enough for making a good professional career. With an aim to go beyond academics, industrial visit provides student a practical perspective on the world of work.</p><p>
+
+Learning from textbooks, lectures and other study material does not suffice for holistic learning. Practical, hands-on learning is essential for better understanding of work processes and computer engineering functions.Industrial visits give greater clarity about important engineering concepts, as students practically experience how these concepts are put into action.</p>
+<h3>Benefits of Industrial visits to engineering Students:</h3>
+<ul>
+  <li>For students pursuing professional education industrial visits helps them gain hands-on experience of how industry operations are executed.</li>
+  <li>Industry visits bridge the gap between theoretical learning and practical training in a real-life environment.</li>
+  <li>Industry visits provide opportunity for active/interactive learning experiences in-class as well outside the classroom environment.</li>
+  <li>Industry visits help enhance interpersonal skills and communication techniques.</li>
+  <li>Students become more aware of industry practices and regulations during industry visits.</li>
+  <li>Industry visits broaden the outlook of students with exposure to different workforces from different industries.
+ </li>
+</ul>
+ <br><br>
+ <!--year wise visit-->
+
+
+
+
+
+
+<h4 style="margin-left: 70px;height: 30px;width: 200px;background-color:#DCDCDC;">YEAR 2019-20</h4>
+<div class="res_table">
+ <table class="customers">
+  <tr>
+    <th>Sr. No.</th>
+    <th>PLACE/ </th>
+    <th>INDUSTRY  DATE</th>
+    <th>DEPARTMENT</th>
+    <th>PEROID OF VISIT </th>
+    <th>No.Of Beneficiaries </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Wabmebs pvt.Ltd ,pandharpur </td>
+    <td>2020-02-25  </td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+      <td>60</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Aplomb solutions Pvt Ltd.pandharpur</td>
+     <td>2020-02-25</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>SNITStechnology pvt Ltd.Pandharpur</td>
+    <td>2020-02-25</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>Consisty pvt Ltd.Pune</td>
+    <td>2019-09-21</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+  </tr>
+    <tr>
+    <td>5</td>
+    <td>Microdyanamics pvt.Ltd. pune</td>
+    <td>2019-09-21</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+  </tr>
+ </table></div>
+<br><br><h4 style="margin-left: 70px;height: 30px;width: 200px;background-color:#DCDCDC;">YEAR 2018-19</h4>
+<div class="res_table">
+ <table class="customers">
+  <tr>
+    <th>Sr. No.</th>
+    <th>PLACE/ </th>
+    <th>INDUSTRY  DATE</th>
+    <th>DEPARTMENT</th>
+    <th>PEROID OF VISIT </th>
+    <th>No.Of Beneficiaries </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Acme Infovision Systems Private Limited, Satara </td>
+    <td>2018-09-21  </td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+      <td>60</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>iGAP Technology Kolhapur</td>
+     <td>2019-09-02</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>ICICI Foundation Kolhapur</td>
+    <td>2019-09-02</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+  </tr>
+
+ </table></div>
+<br><br>
+ <!--year wise visit-->
+<h4 style="margin-left: 70px;height: 30px;width: 200px;background-color:#DCDCDC;">YEAR 2017-18</h4>
+<div class="res_table">
+ <table class="customers">
+  <tr>
+    <th>Sr. No.</th>
+    <th>PLACE/ </th>
+    <th>INDUSTRY  DATE</th>
+    <th>DEPARTMENT</th>
+    <th>PEROID OF VISIT </th>
+    <th>No.Of Beneficiaries </th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Science Center ,Solapur </td>
+    <td>2019-08-15  </td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+      <td>60</td>
+    
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>iGAP Technology Kolhapur</td>
+     <td>2019-09-02</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>ICICI Foundation Kolhapur</td>
+    <td>2019-09-02</td>
+    <td>COMPUTER ENGINEERING</td>
+    <td>01 day</td>
+    <td>80</td>
+
+
+  </tr>
+
+ </table>
+</div>
+
+  </div> 
+</div>
+
+<div id="Principal-Message" class="tabcontent">
+  
+  <div class="main">
+    
+
+  </div>
+</div>
+
+<div id="VisionMission" class="tabcontent">
+  <div class="main">
+   <div class="title">Department Of Computer Engineering – [Achievements]</div>
+  <br><br>
+
+  <div class="title">Student Achievement</div>
+  <br>
+
+  <h4 style="margin-left: 50px;">2019-20</h4>
+  <br>
+  <div class="res_table">
+  <table class="customers" >
+    
+    <tr>
+      <th>SR.NO.</th>
+      <th>NAME OF THE STUDENT</th>
+      <th>TYPE OF EVENT</th>
+      <th>SUBJECT </th>
+      <th>DATE</th>
+      <th>REMARK</th>
+      <th>VENUE</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Vaibhavi Dattatraya Dixit.</td>
+      <td>Student</td>
+      <td>Technical Quiz</td>
+      <td>06-03-2020</td>
+      <td>Winner</td>
+      <td>Fabtech College OF Engineering,Sangola</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Vaishnavi Anil Kshirsagar.</td>
+      <td>Student</td>
+      <td>General Quiz</td>
+      <td>06-03-2020</td>
+      <td>Runner Up</td>
+      <td>Fabtech College OF Engineering,Sangola</td>
+    </tr>
+
+
+
+  </table></div>
+</div></div>
+
+<div id="Association" class="tabcontent">
+  
+  <div class="main">
+    <div class="title">Computer Engineering Student Association</div>
+  <div style="margin:50px;">
+  
+  <h3 style="color: #800000;">Faculty Coordinator:</h3>
+
+       <b>CESA Faculty Coordinator:</b><span>  Mr.G.S.Misal.</span> <br>
+       <b> Event Coordinator:</b><span>  </span> <br><br>
+
+       <h3 style="color: #800000;">Student Coordinator:</h3>
+
+       <b>President: –</b><span>  </span> <br> 
+       <b>Vice President:-</b><span>  </span> <br>
+       <b>Treasurer:-</b><span> </span> <br>     
+
+       </div>
+
+  </div>
+</div>
+
+<div id="Gallery" class="tabcontent">
+  
+  <div class="main">
+    <br><br><br>
+     
+     <div class="title">Gallery</div>
+    <br><br><br>
+     
+      <main>
+
+     <div class="box"><img src="spc1.jpg"></div>
+    <div class="box"><img src="2.jpg"></div>
+    <div class="box" ><img src="3.jpg"></div>
+    <div class="box"><img src="4.jpg"></div>
+    <div class="box"><img src="5.jpg"></div>
+    <div class="box"><img src="6.jpg"></div>
+    <div class="box"><img src="7.jpg"></div>
+    <div class="box"><img src="8.jpg"></div>
+
+
+    </main>
+
+
+    
+  </div>
+</div>
+
+<div id="Faculties" class="tabcontent">
+  
+  <div class="main">
+    <div class="uppertitle">Faculties Of Computer Engineering</div>
+
+
+
+  <div class="card" style="width: 17rem;">
+      <center><img src="chvansir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Chavan Panjabrao Chandrakant<br>
+      HOD<br>
+            <b>Qualification:</b> :M.A.(Eng),B.Ed, MBA(HR)<br>
+            <b>Experience:</b><br>
+            <b>Teaching :</b> 10 Yrs<br>
+            <b>Industrial :</b> 3 Yrs<br>
+            <b> E-Mail :</b>chavanpan15@gmail.com<br>
+            <b>Contact No. :</b>8308216591
+
+        </p>
+     </div>
+  </div>
+
+
+
+
+
+  <div class="card" style="width: 18rem;">
+      <center><img src="doundsir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Mahendra  S. Dound<br>
+      Lecturer<br>
+            <b>Qualification:</b> BE I.T <br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 9 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> maheshdound63@gmail.com<br>
+            <b>Contact No. :</b> 8600142461
+
+        </p>
+
+     </div>
+  </div>
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="pawarsir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Pawar Sudhir Ambadas<br>
+      Lecturer<br>
+            <b>Qualification:</b> M. A. (English), B. Ed. MBA <br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 11 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> sudhirpawar98@gmail.com<br>
+            <b>Contact No. :</b> 9850197504
+
+        </p>
+        
+     </div>
+  </div>
+
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="pg.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Pawar Popat Govind<br>
+      Lecturer<br>
+            <b>Qualification:</b> M.Sc. (Physics), M. Phil.<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 9 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> pgpawarsangola@gmail.com<br>
+            <b>Contact No. :</b> 9881673852
+
+        </p>
+        
+     </div>
+  </div>
+
+<!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="ligadesir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr.Ligade Revannath Vasant<br>
+      Lecturer<br>
+            <b>Qualification:</b> M.Sc. (Physics), M. Phil.<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 10 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> revan_ligade@rediffmail.com<br>
+            <b>Contact No. :</b> 7743843221
+
+        </p>
+        
+     </div>
+  </div>
+
+<!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="sardesir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Sarade Bapu Ganpati<br>
+      Lecturer<br>
+            <b>Qualification:</b>M.Sc. (Mathematics)<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 9 Yrs<br>
+            <b>Industrial :</b>0 Yrs<br>
+            <b> E-Mail :</b> bgsarade1208@gmail.com<br>
+            <b>Contact No. :</b> 9881519596
+
+        </p>
+        
+     </div>
+  </div>
+
+  <!--end-->
+  <div class="card" style="width: 18rem;">
+      <center><img src="kolekarsir.jpg" class="card-img-top" alt="..."></center>
+      <div class="card-body">
+       <p class="card-text">
+      
+        Mr. Kolekar Appasaheb Bira<br>
+       Lab Assistant<br>
+            <b>Qualification:</b>B. Sc. (Physics) B. Ed.<br>
+            <b>Experience</b><br>
+            <b>Teaching :</b> 1 Yrs<br>
+            <b>Industrial :</b>1 Yrs<br>
+            <b> E-Mail :</b> appasaheb1212@gmail.com<br>
+            <b>Contact No. :</b> 9765851212
+
+        </p>
+        
+     </div>
+  </div>
+    
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+        <footer>
+          <div class="footer_content">
+            <div class="left box">
+              <h2>Quick Links</h2>
+               <div class="content">
+                  <div class="links"><a href="index.html">Home</a></div>
+                  <div class="links"><a href="atrust.html">About Trust</a></div>
+                  <div class="links"><a href="department.html">Departments</a></div>
+                  <div class="links"><a href="gallery.html">Gallery</a></div>
+                  
+               </div>
+               <div class="social" >
+                  <a href="#"><i class="fa fa-facebook" ></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube" ></i></a>
+                </div>
+            </div>
+            <div class="middle box">
+               <h2>About Us</h2>
+              <div class="content">
+                <p> 
+                    Shivaji Polytechnic College, Sangola,<br>
+                    Sur. No.76/1, 77 , Sangola-Jath Road,<br>
+                    Sangola – 413309,<br>
+                    Tal- Sangola, Dist.- Solapur,<br>
+                    Maharashtra, India.<br>
+
+                    Phone – (02187)- 222852, 222853<br>
+                    Fax – (02187)- 222852, 222853<br>
+
+                    Web- www.spcsangola.com<br>
+                    Email:spcsangola@yahoo.com</p>
+                
+              </div>
+              
+            </div>
+            <div class="right box">
+              <h2>Contact Us</h2>
+              <div class="content">
+                <form action="#">
+                   <div class="email">
+                     <div class="text">Email *</div>
+                     <input type="email" name="" required>
+                   </div>
+
+                   <div class="msg">
+                     <div class="text">Message *</div>
+                     <textarea rows="2" cols="25"  required></textarea>
+                   </div>
+                   <div class="btn"><button>Submit</button></div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <center>&copy; Copyright 2020 - Shivaji Polytechnic College, Sangola. | All Rights Reserved.  Developed & Designed By - Vaibhavi Dixit.</center>
+          </div>
+        </footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" src="tog.js"></script>
+
+
+
+</body>
+</html>

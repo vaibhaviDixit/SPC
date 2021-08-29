@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+    body { background-color:white; }
+    form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  max-height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+.title{
+  color:#CC6666;
+  margin-left: 100px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  font-size: 5vw;
+
+}
+
+[type="submit"]:hover { background:#CC4949; }
+
+
+    
+    .main .title{
+      color: maroon;
+      font-size: 20px;
+      font-family: verdana;
+      width: 100%;
+    }
+      img{
+      width:200px;
+      height:200px;
+      margin-left: 50px;
+      border-radius: 20px;
+    }
+
+    p{
+      font-family: verdana;
+      margin-left: 50px;
+      font-size:.9em;
+    }
+
+    table, th, td {
+              border: 1px solid black;
+        border-collapse: collapse;
+        font-family: verdana;
+        max-width:95vw;
+        font-size:.9em;
+        padding: 20px;
+        line-height: 22px;
+
+    }
+    th:hover,td:hover{
+      background-color:#ddd; 
+      
+    }
+    table{
+      margin-top: 30px;
+    
+        margin: auto;
+      padding: 10px;
+      
+
+    }
+
+</style>
+
+</head>
+<body link="white" vlink="white">
+
+   <div class="header" >
+           
+             <div id="logo"><img src="logo.png" width="150px" height="150px;"></div>
+
+             <span onclick="func()" id="togicon">&#9776;</span>
+
+
+           <div id="text">
+             
+              <h3 >Ramkrishna Technical Education Society's , </h3>
+              <h2 > SHIVAJI  POLYTECHNIC COLLEGE, SANGOLA</h2>
+              <h4 >Approved by AICTE, New Delhi, Recognized by DTE, Mumbai (Govt. of Maharashtra) Affiliated to MSBTE Mumbai.</h4>
+            <p>An ISO 9001:2015 Certified Institute<br>
+            MSBTE Code : 1208 | DTE Code : D-6471</p>
+
+             </div>
+            
+           </div>
+           
+
+<!--navbar-->
+       
+       <div class="nav" id="navigation">
+        <ul id="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="ainstitute.html">About Institute</a>
+                <a href="atrust.html">About Trust</a>
+                <a href="vision.html">Vision & Mission</a>
+               
+               
+
+
+              </div>
+            </li>
+
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Departments</a>
+    <div class="dropdown-content">
+      <a href="gsd.html">General Science Department</a>
+      <a href="cd.html">Computer Department</a>
+      <a href="ced.html">Civil Department</a>
+      <a href="me.html">Mechanical Department</a>
+      <a href="ej.html"> Electronics Department</a>
+     
+
+
+    </div>
+  </li>
+
+
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Admission</a>
+    <div class="dropdown-content">
+      <a href="course.html">Course Offered</a>
+      <a href="process.html">Admission Process</a>
+      <a href="admicell.html">Admission Cell </a>
+      <a href="fee.html">Fee Structure </a>
+    </div>
+  </li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Academic</a>
+    <div class="dropdown-content">
+      <a href="academic.html">Academic Calendar</a>
+      <a href="acarules.html">Academic Rules</a>
+      <a href="acasyllabus.html">Academic Syllabus </a>
+      
+    </div>
+  </li>
+
+
+
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Placements</a>
+    <div class="dropdown-content">
+      <a href="train.html">About Training And Placement</a>
+      <a href="recruiters.html">Our Recruiters</a>
+      <a href="placecell.html">Contact Placement Cell </a>
+      
+    </div>
+  </li>
+
+  
+  
+  <li><a href="lib.html">Library</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Alumni</a>
+    <div class="dropdown-content">
+      <a href="am.html">Alumni Meet</a>
+      <a href="ac.html">Alumni Cell</a>
+      <a href="ar.html">Alumni Registration </a>
+      
+      
+    </div>
+  </li>
+  
+  <li><a href="faci.html">Facilities</a></li>
+  <li><a href="edp.html">EDP Cell</a></li>
+
+
+     <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href="cont.html">Contact Form</a>
+      <a href="cont2.html">Principal</a>
+      <a href="cont3.html">Admistrative Department </a>
+      <a href="cont4.html">Head Of Department</a>
+      <a href="cont5.html">Admission Cell </a>
+      <a href="cont6.html">Transport Of Department</a>
+      
+      
+    </div>
+  </li>
+  
+
+
+
+</ul></div>
+
+
+
+
+
+<div class="outer">
+
+<div class="tab">
+<h4 style="    padding: 1rem; text-align: center; color: maroon;">CONTACT</h4>
+  <button class="tablinks" onclick="openCity(event, 'About-Trust')" >Contact Form</button>
+  <button class="tablinks" onclick="openCity(event, 'About-Institute')" >Principal</button>
+  <button class="tablinks" onclick="openCity(event, 'President-Message')" id="defaultOpen"> Administrative Department</button>
+  <button class="tablinks" onclick="openCity(event, 'Secretary-Message')">Head Of Department</button>
+  <button class="tablinks" onclick="openCity(event, 'Manager-Message')">Admission Cell</button>
+  <button class="tablinks" onclick="openCity(event, 'Principal-Message')">Transport Of Department</button>
+
+</div>
+
+<div id="About-Trust" class="tabcontent">
+<div class="main">
+
+  <div class="title">Send Your Feedback...</div>
+
+  <form>      
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <input name="email" type="text" class="feedback-input" placeholder="Subject" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT"/>
+</form>
+
+
+</div>
+</div>
+
+<div id="About-Institute" class="tabcontent">
+ <div class="main">
+  
+  <div class="title">Principal</div><br><br>
+
+  <div>
+    <div style="float: left; margin-right: 50px;" ><img src="principle.jpg"></div>
+
+    <div style="float :right; font-size:16px; margin: auto; font-family: Trebuchet MS, Arial, Helvetica, sans-serif; ">
+
+        <b> Mr. R. A. Deshmukh<br>
+         [ Principal ]<br>
+         Qualification :</b> B.E. ( Mech ) M. E. (structure. Engg.)<br>
+
+     <b>Experience:<br>
+      Teaching :</b> 14 Years<br>
+      <b>Industrial :</b> 9 Years<br>
+      <b>E-Mail :</b> ranjitsinhdeshmukh222@gmail.com<br>
+      <b>Contact No.:</b>9763328461
+     
+
+      
+    </div>
+  </div>
+
+
+  <div class="title">Vice Principal</div><br><br>
+
+
+  <div>
+     <div style="float: left; margin-right: 50px;" ><img src="vicep.jpg"></div>
+      <div style="float: right;  font-size:16px; margin: auto; font-family: Trebuchet MS, Arial, Helvetica, sans-serif; ">
+      
+         
+
+        <b> Mr. V. M. Gaikwad<br>
+       [ Vice Principal ]<br>
+         Qualification :</b> BE(Civil) , ME(Civil)<br>
+
+     <b>Experience:<br>
+      Teaching :</b> 12 Years<br>
+      <b>Industrial :</b> 12 Years<br>
+      <b>E-Mail :</b> <br>
+      <b>Contact No.:</b>9850666005
+     
+
+      
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+<div id="President-Message" class="tabcontent">
+ <div class="main">
+
+  
+
+ </div>
+</div>
+
+
+
+<div id="Secretary-Message" class="tabcontent">
+  <div class="main">
+  
+
+
+
+
+
+  </div> 
+</div>
+
+<div id="Manager-Message" class="tabcontent">
+  
+  <div class="main">
+    
+      <div class="title">Admission Cell</div>
+  <br>
+  <p>For more information and queries about admissions , admission process and other admission related information contact</p>
+  <table cellpadding="10">
+
+    <tr>
+    <td>Hon.Mr. B.R.Gaikwad <br>
+President, RTES,Sangola<br>
+Cell No. : 9822072137</td>
+    <td>Prof.R.A.Deshmukh<br>
+Principal, SPC, Sangola<br>
+Cell No. : 9763328461</td>
+    </tr>
+
+
+  <tr>
+    <td colspan="2">Mr. Shankar Manik Sawant<br>
+Admission Incharge<br>
+Cell No. : 8600386007<br>
+Email : savantshankar10@gmail.com</td>
+  </tr>
+
+
+  </table>
+
+
+  </div>
+</div>
+
+<div id="Principal-Message" class="tabcontent">
+  <div class="main">
+   
+
+  <div class="title">Bus Route –</div>
+  <br><br>
+
+  <table id="customers">
+    
+    <tr>
+      <th>Sr. No. </th>
+      <th>Bus No.</th>
+      <th>  Driver Name</th>
+      <th>Route</th>
+    </tr>
+
+
+    <tr>
+      <td>1</td>
+      <td> MH-12-1213</td>
+      <td> Mr. Khatakale</td>
+      <td>College-Sangola Stand-College</td>
+    </tr>
+
+
+    <tr>
+      <td>2</td>
+      <td> MH-12-1215</td>
+      <td></td>
+      <td>College-Sangola Stand-College</td>
+    </tr>
+  </table>
+
+  
+
+</div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+        <footer>
+          <div class="footer_content">
+            <div class="left box">
+              <h2>Quick Links</h2>
+               <div class="content">
+                  <div class="links"><a href="index.html">Home</a></div>
+                  <div class="links"><a href="atrust.html">About Trust</a></div>
+                  <div class="links"><a href="department.html">Departments</a></div>
+                  <div class="links"><a href="gallery.html">Gallery</a></div>
+                  
+               </div>
+               <div class="social" >
+                  <a href="#"><i class="fa fa-facebook" ></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube" ></i></a>
+                </div>
+            </div>
+            <div class="middle box">
+               <h2>About Us</h2>
+              <div class="content">
+                <p> 
+                    Shivaji Polytechnic College, Sangola,<br>
+                    Sur. No.76/1, 77 , Sangola-Jath Road,<br>
+                    Sangola – 413309,<br>
+                    Tal- Sangola, Dist.- Solapur,<br>
+                    Maharashtra, India.<br>
+
+                    Phone – (02187)- 222852, 222853<br>
+                    Fax – (02187)- 222852, 222853<br>
+
+                    Web- www.spcsangola.com<br>
+                    Email:spcsangola@yahoo.com</p>
+                
+              </div>
+              
+            </div>
+            <div class="right box">
+              <h2>Contact Us</h2>
+              <div class="content">
+                <form action="#">
+                   <div class="email">
+                     <div class="text">Email *</div>
+                     <input type="email" name="" required>
+                   </div>
+
+                   <div class="msg">
+                     <div class="text">Message *</div>
+                     <textarea rows="2" cols="25"  required></textarea>
+                   </div>
+                   <div class="btn"><button>Submit</button></div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom">
+            <center>&copy; Copyright 2020 - Shivaji Polytechnic College, Sangola. | All Rights Reserved.  Developed & Designed By - Vaibhavi Dixit.</center>
+          </div>
+        </footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" src="tog.js"></script>
+
+
+
+</body>
+</html>
